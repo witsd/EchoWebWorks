@@ -1213,6 +1213,54 @@ body.glow-active::before {
     flex-shrink: 0;
 }
 
+/* Add-ons */
+
+.addons-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.addons-section h3 {
+    font-size: 1.25rem;
+    font-family: "Space Grotesk", sans-serif;
+    margin-bottom: 2rem;
+    color: var(--foreground);
+}
+
+.addons-grid {
+    display: grid;
+    gap: 1rem;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.addon-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    background: color-mix(in oklab, var(--card) 40%, transparent);
+    font-size: 0.875rem;
+}
+
+.addon-name {
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.addon-price {
+    font-weight: 600;
+    color: var(--primary-glow);
+}
 
 /* FAQ */
 
