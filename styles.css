@@ -31,7 +31,7 @@ body.light .nav {
 }
 
 body.light .btn-primary {
-    background: oklch(0.50 0.21 27);
+    background: (rgb(17, 112, 199));
     color: var(--foreground);
     box-shadow: var(--shadow-elegant);
 }
