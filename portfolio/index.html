@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Echo Web Works</title>
+    <meta name="description" content="Echo Web Works portfolio page with live previews of completed websites." />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../EWW_symbol_transparent.png" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="../home_page.html" class="brand">
+                <img src="../EWW_symbol_transparent.png" alt="Echo Web Works" />
+                <span>Echo Web Works</span>
+            </a>
+            <nav class="nav-links">
+                <a href="../home_page.html#services">Home</a>
+                <a href="../home_page.html#why">Why us</a>
+                <a href="../home_page.html#pricing">Pricing</a>
+                <a href="../home_page.html#contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="btn btn-outline btn-sm">Light mode</button>
+                <a href="../home_page.html" class="btn btn-secondary btn-sm">Home</a>
+                <a href="../home_page.html#contact" class="btn btn-primary btn-sm">Book a call <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section portfolio-page">
+        <div class="container">
+            <div class="section-head">
+                <p class="kicker">Portfolio</p>
+                <h1 class="display h2">Browse live previews of recent site builds.</h1>
+                <p class="muted">Each tile below shows a mini version of the website. Click any project to open the full site and explore the complete experience.</p>
+            </div>
+
+            <div class="preview-grid">
+                <article class="portfolio-card">
+                    <div>    
+                        <h3>Aquatica</h3>
+                        <p>Adult swim school landing page designed for calm trust and effortless conversions.</p>
+                    </div>
+                    <div class="project-screenshot">
+                        <img src="aquatica/images/hero-swim.jpg" alt="Aquatica front page screenshot" />
+                    </div>
+                    <div class="portfolio-card-footer">
+                        <a href="aquatica/index.html" class="btn btn-secondary btn-sm">Open full site</a>
+                        <span class="muted small">Front page preview</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div>  
+                        <h3>Natalia Nails Studio</h3>
+                        <p>Boutique nail atelier site built with polished visual style and clear booking flow.</p>
+                    </div>
+                    <div class="project-screenshot">
+                        <img src="nail-site/images/hero.jpg" alt="Natalia Nails Studio front page screenshot" />
+                    </div>
+                    <div class="portfolio-card-footer">
+                        <a href="nail-site/index.html" class="btn btn-secondary btn-sm">Open full site</a>
+                        <span class="muted small">Front page preview</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../home_page.html" class="brand"><img src="../EWW_symbol_transparent.png" alt="Echo Web Works" /><span>Echo Web Works</span></a>
+                    <p class="muted small mt-16">A showcase of recent website builds, designed and shipped with care.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../home_page.html">Home</a></li>
+                        <li><a href="../home_page.html#services">Services</a></li>
+                        <li><a href="../home_page.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="aquatica/index.html">Aquatica</a></li>
+                        <li><a href="nail-site/index.html">Natalia Nails</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="../home_page.html#contact" class="footer-cta">Book a call <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="year"></span> Echo Web Works. All rights reserved.</span>
+                <span>Designed for speed · Live previews · Easy extensions</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

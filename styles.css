@@ -1527,6 +1527,120 @@ body.glow-active::before {
     }
 }
 
+.portfolio-page {
+    padding-top: 7rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-page .section-head {
+    max-width: 42rem;
+}
+
+.preview-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-page .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+@media (min-width: 768px) {
+    .preview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.preview-card,
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.75rem;
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    background: var(--card);
+}
+
+.preview-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.preview-card p {
+    margin: 0;
+    color: var(--muted-fg);
+    line-height: 1.75;
+}
+
+.portfolio-note {
+    margin-top: 2rem;
+    max-width: 54rem;
+    color: var(--muted-fg);
+    font-size: 0.95rem;
+}
+
+.project-screenshot {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.project-screenshot img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    object-fit: cover;
+    height: 220px;
+}
+
+.screenshot-title {
+    font-size: 0.9rem;
+    color: var(--muted-fg);
+}
+
+.portfolio-card {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    background: var(--card);
+}
+
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 260px;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--background);
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.portfolio-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.portfolio-card-footer .muted {
+    color: var(--muted-fg);
+}
 
 /* Reveal animation */
 
