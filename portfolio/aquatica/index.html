@@ -3,200 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aquatica — Adult Swim School</title>
-  <meta name="description" content="Aquatica is a specialist adult swim teaching school. Friendly, expert coaching in premium pools." />
-  <meta name="theme-color" content="#8a1c1c" />
+  <title>Aquatica — Adult Swim School | Learn to Swim with Confidence</title>
+  <meta name="description" content="Aquatica is a specialist adult-only swim school. Patient, expert coaching in warm premium pools — beginners, stroke school, and open-water prep, 7 days a week." />
+  <meta name="theme-color" content="#041e2e" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Aquatica | Adult swim lessons for beginners & stroke improvement" />
   <meta property="og:description" content="Patient, adult-only swim programs in calm pools with expert coaching for every level." />
   <meta property="og:image" content="images/hero-swim.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aquatica | Adult swim lessons for beginners & stroke improvement" />
-  <meta name="twitter:description" content="Patient, adult-only swim programs in calm pools with expert coaching for every level." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <!-- NAV -->
   <header class="nav-wrap">
     <nav class="nav container" aria-label="Primary navigation">
-      <a href="#main-content" class="wordmark"><span class="accent">aqua</span>tica<span class="accent">.</span></a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="sr-only">Toggle site navigation</span>
-        <span aria-hidden="true">☰</span>
-      </button>
+      <a href="#main" class="wordmark">aquatica<span>°</span></a>
       <div class="nav-links" id="primary-navigation" data-visible="false">
-        <a href="#about">About</a>
         <a href="#programs">Programs</a>
         <a href="#why">Why Aquatica</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#stories">Stories</a>
+        <a href="#faq">FAQ</a>
       </div>
-      <div class="nav-actions">
-        <button class="btn btn-outline btn-sm hide-sm">Book a session</button>
-        <button class="btn btn-primary btn-sm">Find a pool</button>
-      </div>
+      <a href="#book" class="btn btn-glow btn-sm nav-cta">Book a session</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
     </nav>
   </header>
-  <main id="main-content">
+
+  <main id="main">
 
   <!-- HERO -->
   <section class="hero">
-    <div class="deco" aria-hidden="true">
-      <span class="dot dot-1"></span><span class="dot dot-2"></span>
-      <span class="dot dot-3"></span><span class="dot dot-4"></span>
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-img" style="background-image:url('images/water.jpg')"></div>
+      <div class="hero-tint"></div>
     </div>
-    <div class="container hero-grid">
-      <div class="hero-side hide-md">
-        <div class="bubble b-xl reveal delay-0"><img src="images/swimmer-portrait.jpg" alt="Adult swimmer" loading="lazy" /></div>
-        <div class="bubble b-md ring shift-r reveal delay-2"><img src="images/water.jpg" alt="Pool water surface" loading="lazy" /></div>
-      </div>
-
-      <div class="hero-center">
-        <p class="eyebrow reveal">Adult Swim School</p>
-        <h1 class="reveal delay-05">teaching adults to <span class="accent">swim.</span></h1>
-        <p class="lede reveal delay-15">
-          Patient, expert-led programs in premium adult-only sessions — the confidence to truly enjoy the water, at any age.
-        </p>
-        <form class="search reveal delay-3" novalidate>
+    <div class="container hero-inner">
+      <div class="glass hero-panel reveal">
+        <p class="eyebrow">Adult-only swim school · 7 days a week</p>
+        <h1>The water doesn't care <span class="aqua">how old you are.</span></h1>
+        <p class="lede">One in three UK adults can't swim a length. Our patient, expert coaches change that — in warm pools, small classes, zero judgement.</p>
+        <form class="search" novalidate>
           <label class="sr-only" for="pool-search">Search by town, city or postcode</label>
-          <span class="search-icon" aria-hidden="true">🔍</span>
-          <input id="pool-search" type="search" placeholder="Town, city or postcode" aria-describedby="pool-search-feedback" />
-          <button class="btn btn-primary" type="submit">Find a pool</button>
-          <p class="search-feedback" id="pool-search-feedback" aria-live="polite"></p>
+          <input id="pool-search" type="search" placeholder="Your town, city or postcode" aria-describedby="pool-search-feedback" />
+          <button class="btn btn-glow" type="submit">Find a pool</button>
         </form>
-      </div>
-
-      <div class="hero-side hide-md">
-        <div class="bubble b-md ring shift-l reveal delay-1"><img src="images/hero-swim.jpg" alt="Freestyle swimmer" loading="lazy" /></div>
-        <div class="bubble b-xl reveal delay-3"><img src="images/coach.jpg" alt="Swimming coach" loading="lazy" /></div>
-      </div>
-
-      <div class="hero-mobile show-sm">
-        <div class="bubble b-sm"><img src="images/swimmer-portrait.jpg" alt="Adult swimmer portrait" loading="lazy" /></div>
-        <div class="bubble b-sm ring"><img src="images/hero-swim.jpg" alt="Freestyle swimmer" loading="lazy" /></div>
-        <div class="bubble b-sm"><img src="images/coach.jpg" alt="Swimming coach" loading="lazy" /></div>
+        <p class="search-feedback" id="pool-search-feedback" aria-live="polite"></p>
+        <div class="hero-badges">
+          <span>STA &amp; Swim England qualified</span>
+          <span>Max 4 per class</span>
+          <span>500+ adults taught</span>
+        </div>
       </div>
     </div>
+    <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,48 C240,95 480,5 720,42 C960,80 1200,20 1440,55 L1440,90 L0,90 Z" fill="currentColor"/>
+    </svg>
   </section>
 
   <!-- STATS -->
   <section class="stats">
     <div class="container stats-grid">
-      <div><div class="stat-n">500+</div><div class="stat-l">Adults taught</div></div>
-      <div><div class="stat-n">98%</div><div class="stat-l">Recommend us</div></div>
-      <div><div class="stat-n">10</div><div class="stat-l">Expert coaches</div></div>
-      <div><div class="stat-n">7 days</div><div class="stat-l">A week</div></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container two-col">
-      <div class="about-photo reveal">
-        <div class="bubble bubble-fill ring"><img src="images/coach.jpg" alt="Coach with student" loading="lazy" /></div>
-        <div class="bubble bubble-overlap"><img src="images/swimmer-portrait.jpg" alt="Smiling swimmer" loading="lazy" /></div>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow">Welcome to Aquatica</p>
-        <h2>takes you from <span class="accent">splash to swim.</span></h2>
-        <p class="lede">
-          One in three adults in the UK can't swim a single length confidently. We're here to change that.
-          Through small, adult-only classes in calm, welcoming pools, our expert coaches make learning to
-          swim the best part of your week — no matter your age or where you're starting from.
-        </p>
-        <div class="actions">
-          <button class="btn btn-primary btn-lg">Book now</button>
-          <button class="btn btn-outline btn-lg">Meet the team</button>
-        </div>
-      </div>
+      <div class="reveal"><span class="stat-n" data-count="500" data-suffix="+">0</span><span class="stat-l">Adults taught to swim</span></div>
+      <div class="reveal"><span class="stat-n" data-count="98" data-suffix="%">0</span><span class="stat-l">Would recommend us</span></div>
+      <div class="reveal"><span class="stat-n" data-count="10">0</span><span class="stat-l">Expert coaches</span></div>
+      <div class="reveal"><span class="stat-n" data-count="7">0</span><span class="stat-l">Days a week</span></div>
     </div>
   </section>
 
   <!-- PROGRAMS -->
-  <section id="programs" class="section section-muted">
-    <div class="container center">
-      <p class="eyebrow">Our programs</p>
-      <h2>a journey for every adult swimmer.</h2>
-
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Programs</p>
+        <h2>A lane for every <span class="aqua">level.</span></h2>
+        <p class="lede">Start where you are. We'll take you the rest of the way.</p>
+      </div>
       <div class="programs">
-        <div class="program reveal">
-          <div class="bubble b-lg ring"><img src="images/beginner.jpg" alt="Beginners" /></div>
-          <h3>beginners</h3>
-          <p>First time in the deep end? We build your trust in the water, length by length.</p>
-          <a href="#" class="link">Learn more →</a>
-        </div>
-        <div class="program reveal delay-1">
-          <div class="bubble b-lg ring"><img src="images/hero-swim.jpg" alt="Stroke school" loading="lazy" /></div>
-          <h3>stroke school</h3>
-          <p>Refine every stroke with video review and small, focused technique sessions.</p>
-          <a href="#" class="link">Learn more →</a>
-        </div>
-        <div class="program reveal delay-2">
-          <div class="bubble b-lg ring"><img src="images/openwater.jpg" alt="Open water" loading="lazy" /></div>
-          <h3>open water</h3>
-          <p>Train for lakes, sea swims and triathlons with structured open-water prep.</p>
-          <a href="#" class="link">Learn more →</a>
-        </div>
+        <article class="glass program reveal">
+          <div class="program-img"><img src="images/beginner.jpg" alt="A beginner adult swimmer gaining confidence" loading="lazy" /></div>
+          <div class="program-body">
+            <span class="program-tag">Level 1</span>
+            <h3>Beginners</h3>
+            <p>Never swum before, or nervous in deep water? We build trust in the water length by length — at your pace, always.</p>
+            <a href="#book" class="link-arrow">Start here <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="glass program program-featured reveal">
+          <div class="program-img"><img src="images/hero-swim.jpg" alt="Swimmer refining freestyle technique" loading="lazy" /></div>
+          <div class="program-body">
+            <span class="program-tag">Level 2 · Most popular</span>
+            <h3>Stroke School</h3>
+            <p>You can swim — now swim well. Video review and focused technique sessions that transform every stroke.</p>
+            <a href="#book" class="link-arrow">Refine your stroke <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="glass program reveal">
+          <div class="program-img"><img src="images/openwater.jpg" alt="Open water swimmer training in a lake" loading="lazy" /></div>
+          <div class="program-body">
+            <span class="program-tag">Level 3</span>
+            <h3>Open Water</h3>
+            <p>Lakes, sea swims, and triathlons. Structured open-water preparation for swimmers chasing something bigger.</p>
+            <a href="#book" class="link-arrow">Go further <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- WHY -->
-  <section id="why" class="section">
-    <div class="container two-col">
-      <div class="reveal">
+  <section id="why" class="section sec-deep">
+    <div class="container why-grid">
+      <div class="why-copy reveal">
         <p class="eyebrow">Why Aquatica</p>
-        <h2>built entirely<br><span class="accent">around adults.</span></h2>
-        <p class="lede">Most pools are designed for children. We're not. Every detail — from class size to pool temperature — is shaped around how grown-ups actually learn.</p>
+        <h2>Built entirely <span class="aqua">around adults.</span></h2>
+        <p class="lede">Most pools are designed for children. Ours aren't. Every detail — class size, water temperature, session privacy — is shaped around how grown-ups actually learn.</p>
         <ul class="features">
-          <li><span class="ficon">♥</span><div><strong>Patient, judgement-free</strong><p>Start exactly where you are — no pressure, no embarrassment.</p></div></li>
-          <li><span class="ficon">👥</span><div><strong>Max 4 per class</strong><p>Small groups mean real coaching attention every length.</p></div></li>
-          <li><span class="ficon">🛡</span><div><strong>Qualified instructors</strong><p>All coaches are STA / Swim England qualified.</p></div></li>
-          <li><span class="ficon">✦</span><div><strong>Premium pools</strong><p>Warm water, clean facilities, calm adult-only sessions.</p></div></li>
+          <li>
+            <span class="ficon" aria-hidden="true">○</span>
+            <div><strong>Patient and judgement-free</strong><p>Start exactly where you are. No pressure, no embarrassment.</p></div>
+          </li>
+          <li>
+            <span class="ficon" aria-hidden="true">○</span>
+            <div><strong>Maximum four per class</strong><p>Small groups mean real coaching attention on every length.</p></div>
+          </li>
+          <li>
+            <span class="ficon" aria-hidden="true">○</span>
+            <div><strong>Qualified instructors</strong><p>Every coach is STA / Swim England qualified.</p></div>
+          </li>
+          <li>
+            <span class="ficon" aria-hidden="true">○</span>
+            <div><strong>Premium, adult-only pools</strong><p>Warm water, clean facilities, calm sessions.</p></div>
+          </li>
         </ul>
       </div>
-      <div class="why-photos reveal">
-        <div class="bubble why-a"><img src="images/beginner.jpg" alt="" /></div>
-        <div class="bubble ring why-b"><img src="images/openwater.jpg" alt="" /></div>
+      <div class="why-photos reveal" aria-hidden="true">
+        <div class="why-photo wp-a"><img src="images/coach.jpg" alt="" loading="lazy" /></div>
+        <div class="why-photo wp-b"><img src="images/swimmer-portrait.jpg" alt="" loading="lazy" /></div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL -->
-  <section class="section section-muted">
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-f7e79b37-d09b-4153-986e-725d0ed66949" data-elfsight-app-lazy></div>
+  <!-- STORIES -->
+  <section id="stories" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Swimmer stories</p>
+        <h2>From first splash to <span class="aqua">first mile.</span></h2>
+      </div>
+      <div class="stories">
+        <figure class="glass story reveal">
+          <blockquote>“I'm 54 and spent my whole life avoiding the pool on holiday. After twelve weeks with Aquatica I swam a full length, then ten. My only regret is not starting sooner.”</blockquote>
+          <figcaption><strong>Karen</strong><span>Beginners program</span></figcaption>
+        </figure>
+        <figure class="glass story reveal">
+          <blockquote>“The video review in Stroke School was a revelation. I knocked 40 seconds off my 400m time in two months.”</blockquote>
+          <figcaption><strong>Dan</strong><span>Stroke School</span></figcaption>
+        </figure>
+        <figure class="glass story reveal">
+          <blockquote>“Open-water prep got me through my first triathlon swim without panic. Calm, structured, brilliant coaching.”</blockquote>
+          <figcaption><strong>Priya</strong><span>Open Water</span></figcaption>
+        </figure>
+      </div>
+    </div>
   </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <div class="center narrow">
-        <p class="eyebrow">In the pool</p>
-        <h2>a calm place to <span class="accent">learn.</span></h2>
+  <!-- FAQ -->
+  <section id="faq" class="section sec-deep">
+    <div class="container faq-wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you <span class="aqua">dive in.</span></h2>
       </div>
-      <div class="gallery">
-        <div class="bubble reveal y-down"><img src="images/hero-swim.jpg" alt="Freestyle swimmer" loading="lazy" /></div>
-        <div class="bubble ring reveal y-up"><img src="images/coach.jpg" alt="Swimming coach" loading="lazy" /></div>
-        <div class="bubble reveal y-down"><img src="images/beginner.jpg" alt="Beginner swimmer" loading="lazy" /></div>
-        <div class="bubble ring reveal y-up"><img src="images/openwater.jpg" alt="Open water training" loading="lazy" /></div>
+      <div class="faq-list reveal">
+        <details>
+          <summary>I'm a complete beginner — is that really okay?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>It's exactly who we built Aquatica for. Most of our beginners have never swum a length in their life. You'll start in shallow, warm water and progress only when you're ready.</p>
+        </details>
+        <details>
+          <summary>What do I need to bring?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Just swimwear, a towel, and goggles if you have them. We provide everything else, including floats and training aids.</p>
+        </details>
+        <details>
+          <summary>How big are the classes?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Never more than four swimmers per coach. Private one-to-one sessions are also available on request.</p>
+        </details>
+        <details>
+          <summary>When do sessions run?<span class="faq-x" aria-hidden="true">+</span></summary>
+          <p>Seven days a week — mornings, evenings, and weekends — so lessons fit around your work, not the other way round.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta section-muted">
-    <div class="deco" aria-hidden="true">
-      <span class="dot dot-5"></span><span class="dot dot-6"></span><span class="dot dot-7"></span>
-    </div>
-    <div class="container narrow center">
-      <h2 class="big">ready to <span class="accent">dive in?</span></h2>
-      <p class="lede">Sessions seven days a week. Tell us where you are with swimming and we'll match you to the perfect program.</p>
-      <button class="btn btn-primary btn-lg">Book your first session</button>
+  <section id="book" class="cta">
+    <div class="container">
+      <div class="glass cta-panel reveal">
+        <h2>Ready to <span class="aqua">dive in?</span></h2>
+        <p class="lede">Tell us where you are with swimming and we'll match you to the perfect program — usually within a day.</p>
+        <form class="cta-form" novalidate>
+          <label class="sr-only" for="cta-email">Your email address</label>
+          <input id="cta-email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn-glow btn-lg" type="submit">Book your first session</button>
+        </form>
+        <p class="cta-feedback" aria-live="polite"></p>
+        <p class="cta-note">No commitment — your first session is a relaxed assessment in the water.</p>
+      </div>
     </div>
   </section>
 
@@ -204,12 +222,21 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container center">
-      <a href="#" class="wordmark"><span class="accent">aqua</span>tica<span class="accent">.</span></a>
-      <p class="muted small">© 2026 Aquatica Adult Swim School. All rights reserved.</p>
+    <svg class="wave wave-footer" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,48 C240,95 480,5 720,42 C960,80 1200,20 1440,55 L1440,0 L0,0 Z" fill="currentColor"/>
+    </svg>
+    <div class="container footer-inner">
+      <a href="#main" class="wordmark">aquatica<span>°</span></a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#programs">Programs</a>
+        <a href="#why">Why us</a>
+        <a href="#stories">Stories</a>
+        <a href="#book">Book</a>
+      </nav>
+      <p class="muted">© <span id="year"></span> Aquatica Adult Swim School. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

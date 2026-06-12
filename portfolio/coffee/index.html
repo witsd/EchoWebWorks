@@ -3,177 +3,175 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ember & Grain — Slow Coffee, London E8</title>
-  <meta name="description" content="Slow-craft coffee and baked goods in a railway arch off London Fields. Open daily from 7am." />
-  <meta name="theme-color" content="#1A1208" />
+  <title>Ember &amp; Grain — Slow Coffee, London E8</title>
+  <meta name="description" content="Slow-craft coffee and baked goods in a railway arch off London Fields. Roasted on-site, sourced direct. Open daily from 7am." />
+  <meta name="theme-color" content="#f2ead9" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="#main" class="wordmark">Ember <em>&</em> Grain</a>
-      <nav class="desktop-nav">
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-rule masthead-rule-top"></div>
+    <div class="masthead-inner">
+      <span class="masthead-est">Est. 2019 · London Fields</span>
+      <a href="#main" class="masthead-brand">Ember <em>&amp;</em> Grain</a>
+      <nav class="masthead-nav" aria-label="Primary navigation">
         <a href="#menu">Menu</a>
-        <a href="#about">About</a>
+        <a href="#story">Story</a>
         <a href="#visit">Visit</a>
       </nav>
-      <a href="#visit" class="header-cta">Find us</a>
-      <button class="hamburger" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#visit">Visit</a>
-    </nav>
+    <div class="masthead-rule"></div>
   </header>
 
   <main id="main">
 
-    <section class="hero">
-      <div class="container">
-        <p class="hero-location">Arch 3, 14 Coalyard Lane · London E8 · Mon–Fri 7am–6pm · Sat–Sun 8am–4pm</p>
-        <h1>Slow coffee<br>in a railway<br><em>arch.</em></h1>
-        <div class="hero-foot">
-          <p>Two baristas. Six tables. One drum roaster. We opened in 2019 and the menu hasn't changed much since.</p>
-          <a href="#menu" class="hero-link">See the menu</a>
-        </div>
+  <!-- COVER -->
+  <section class="cover">
+    <div class="container">
+      <p class="cover-line mono">Arch 3, 14 Coalyard Lane · E8 · Open daily from 7am</p>
+      <h1>Slow coffee<br>in a railway<br><em>arch.</em></h1>
+      <div class="cover-foot">
+        <p>Two baristas. Six tables. One drum roaster.<br>We opened in 2019 and the menu hasn't changed much since.</p>
+        <a href="#menu" class="btn-ink">See the menu ↓</a>
       </div>
-    </section>
+      <div class="cover-stamp" aria-hidden="true">
+        <span>Roasted<br>on·site</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="menu" class="section-menu">
-      <div class="container">
-        <div class="menu-header">
-          <p class="label">The menu</p>
-          <p class="menu-note">Ask at the counter for today's filter roast and what's just come out of the oven.</p>
-        </div>
-        <div class="menu-body">
-          <div class="menu-col">
-            <div class="menu-cat">
-              <h3>Espresso</h3>
-              <div class="menu-list">
-                <div class="menu-row"><span>Flat white</span><span>£3.80</span></div>
-                <div class="menu-row"><span>Cortado</span><span>£3.50</span></div>
-                <div class="menu-row"><span>Long black</span><span>£2.80</span></div>
-                <div class="menu-row"><span>Ristretto</span><span>£2.60</span></div>
-                <div class="menu-row"><span>Cappuccino</span><span>£3.60</span></div>
-              </div>
-            </div>
-            <div class="menu-cat">
-              <h3>Filter</h3>
-              <div class="menu-list">
-                <div class="menu-row"><span>V60 single cup</span><span>£4.20</span></div>
-                <div class="menu-row"><span>Chemex (2 cup)</span><span>£6.50</span></div>
-                <div class="menu-row"><span>Cold brew</span><span>£4.50</span></div>
-                <div class="menu-row"><span>Batch filter</span><span>£3.00</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="menu-col">
-            <div class="menu-cat">
-              <h3>Kitchen</h3>
-              <div class="menu-list">
-                <div class="menu-row"><span>Butter croissant</span><span>£2.80</span></div>
-                <div class="menu-row"><span>Morning bun</span><span>£3.20</span></div>
-                <div class="menu-row"><span>Sourdough slice</span><span>£3.50</span></div>
-                <div class="menu-row"><span>Granola bowl</span><span>£5.50</span></div>
-                <div class="menu-row"><span>Seasonal tart</span><span>£4.00</span></div>
-              </div>
-            </div>
-            <div class="menu-cat">
-              <h3>On the bar this month</h3>
-              <div class="menu-list">
-                <div class="menu-row"><span>Honey oat latte</span><span>£4.50</span></div>
-                <div class="menu-row"><span>Spiced chai</span><span>£4.00</span></div>
-                <div class="menu-row"><span>Matcha bloom</span><span>£4.20</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="menu-foot">Oat, almond and soy milk available. All pastries made in-house before 7am.</p>
-      </div>
-    </section>
+  <div class="double-rule container" aria-hidden="true"></div>
 
-    <section id="about" class="section-about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-left reveal">
-            <p class="label">Our story</p>
-            <blockquote>"We thought coffee culture had lost its sense of place. So we found a railway arch and did something about it."</blockquote>
-            <p class="about-attribution">— Tom & Harriet, founders</p>
-          </div>
-          <div class="about-right reveal">
-            <p>In 2019, two baristas who'd worked in specialty coffee for a combined 14 years left their jobs on the same week. They found a narrow Victorian railway arch in London Fields, installed a 15kg drum roaster that takes up most of the back room, and opened with six tables and a menu that fit on one card.</p>
-            <p>We source directly from small farms in Ethiopia, Colombia, Guatemala and Yemen. We know the farmers by name. We pay above Fairtrade rates because that's the floor, not the ceiling.</p>
-            <div class="about-facts">
-              <div class="fact">
-                <span class="fact-n">2019</span>
-                <span class="fact-l">Founded</span>
-              </div>
-              <div class="fact">
-                <span class="fact-n">15kg</span>
-                <span class="fact-l">Drum roaster</span>
-              </div>
-              <div class="fact">
-                <span class="fact-n">12</span>
-                <span class="fact-l">Origins on rotation</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- MENU -->
+  <section id="menu" class="section-menu">
+    <div class="container">
+      <header class="menu-head">
+        <span class="mono menu-no">№ 1</span>
+        <h2>The Menu</h2>
+        <p class="mono">Ask at the counter for today's filter roast<br>and what's just come out of the oven.</p>
+      </header>
 
-    <section class="section-pull">
-      <div class="container">
-        <p class="pull-text reveal">Sourced direct. Roasted on-site. Poured with<br>a bit more care than is strictly necessary.</p>
+      <div class="menu-cols">
+        <div class="menu-col">
+          <div class="menu-cat">
+            <h3 class="mono">— Espresso —</h3>
+            <div class="menu-row"><span>Flat white</span><i></i><span class="mono">£3.80</span></div>
+            <div class="menu-row"><span>Cortado</span><i></i><span class="mono">£3.50</span></div>
+            <div class="menu-row"><span>Long black</span><i></i><span class="mono">£2.80</span></div>
+            <div class="menu-row"><span>Ristretto</span><i></i><span class="mono">£2.60</span></div>
+            <div class="menu-row"><span>Cappuccino</span><i></i><span class="mono">£3.60</span></div>
+          </div>
+          <div class="menu-cat">
+            <h3 class="mono">— Filter —</h3>
+            <div class="menu-row"><span>V60 single cup</span><i></i><span class="mono">£4.20</span></div>
+            <div class="menu-row"><span>Chemex (2 cup)</span><i></i><span class="mono">£6.50</span></div>
+            <div class="menu-row"><span>Cold brew</span><i></i><span class="mono">£4.50</span></div>
+            <div class="menu-row"><span>Batch filter</span><i></i><span class="mono">£3.00</span></div>
+          </div>
+        </div>
+        <div class="menu-col">
+          <div class="menu-cat">
+            <h3 class="mono">— Kitchen —</h3>
+            <div class="menu-row"><span>Butter croissant</span><i></i><span class="mono">£2.80</span></div>
+            <div class="menu-row"><span>Morning bun</span><i></i><span class="mono">£3.20</span></div>
+            <div class="menu-row"><span>Sourdough slice</span><i></i><span class="mono">£3.50</span></div>
+            <div class="menu-row"><span>Granola bowl</span><i></i><span class="mono">£5.50</span></div>
+            <div class="menu-row"><span>Seasonal tart</span><i></i><span class="mono">£4.00</span></div>
+          </div>
+          <div class="menu-special">
+            <h3 class="mono">On the bar this month</h3>
+            <div class="menu-row"><span>Honey oat latte</span><i></i><span class="mono">£4.50</span></div>
+            <div class="menu-row"><span>Spiced chai</span><i></i><span class="mono">£4.00</span></div>
+            <div class="menu-row"><span>Matcha bloom</span><i></i><span class="mono">£4.20</span></div>
+          </div>
+        </div>
       </div>
-    </section>
+      <p class="menu-foot mono">* Oat, almond and soy milk available. All pastries made in-house before 7am.</p>
+    </div>
+  </section>
 
-    <section id="visit" class="section-visit">
-      <div class="container">
-        <div class="visit-head reveal">
-          <p class="label">Find us</p>
-          <h2>Come in.<br>Stay as long as you like.</h2>
-        </div>
-        <div class="visit-grid">
-          <div class="visit-block reveal">
-            <p class="visit-label">Address</p>
-            <p>Arch 3, 14 Coalyard Lane<br>London, E8 3SE<br><span class="visit-note">Two minutes from London Fields station.</span></p>
-          </div>
-          <div class="visit-block reveal">
-            <p class="visit-label">Hours</p>
-            <p>Monday – Friday<br>7:00am – 6:00pm</p>
-            <p>Saturday – Sunday<br>8:00am – 4:00pm</p>
-          </div>
-          <div class="visit-block reveal">
-            <p class="visit-label">Get in touch</p>
-            <p><a href="tel:+442071234567">+44 207 123 4567</a></p>
-            <p><a href="mailto:hello@emberandgrain.co">hello@emberandgrain.co</a></p>
-            <p class="visit-note">We don't take bookings for individual tables. Just walk in.</p>
-          </div>
+  <div class="double-rule container" aria-hidden="true"></div>
+
+  <!-- STORY -->
+  <section id="story" class="section-story">
+    <div class="container story-grid">
+      <header class="story-head">
+        <span class="mono menu-no">№ 2</span>
+        <h2>Our Story</h2>
+      </header>
+      <div class="story-body">
+        <p class="has-dropcap">In 2019, two baristas who'd worked in specialty coffee for a combined fourteen years left their jobs in the same week. They found a narrow Victorian railway arch in London Fields, installed a 15kg drum roaster that takes up most of the back room, and opened with six tables and a menu that fit on one card.</p>
+        <p>We source directly from small farms in Ethiopia, Colombia, Guatemala and Yemen. We know the farmers by name. We pay above Fairtrade rates because that's the floor, not the ceiling.</p>
+        <blockquote>
+          “We thought coffee culture had lost its sense of place. So we found a railway arch and did something about it.”
+          <cite class="mono">— Tom &amp; Harriet, founders</cite>
+        </blockquote>
+        <div class="story-facts">
+          <div><span class="fact-n">2019</span><span class="mono">Founded</span></div>
+          <div><span class="fact-n">15kg</span><span class="mono">Drum roaster</span></div>
+          <div><span class="fact-n">12</span><span class="mono">Origins on rotation</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- PULL -->
+  <section class="section-pull">
+    <div class="container">
+      <p class="pull-text">Sourced direct. Roasted on-site. Poured with <em>a bit more care</em> than is strictly necessary.</p>
+    </div>
+  </section>
+
+  <div class="double-rule container" aria-hidden="true"></div>
+
+  <!-- VISIT -->
+  <section id="visit" class="section-visit">
+    <div class="container">
+      <header class="menu-head">
+        <span class="mono menu-no">№ 3</span>
+        <h2>Come in.<br>Stay as long as you like.</h2>
+      </header>
+      <div class="visit-grid">
+        <div class="visit-block">
+          <h3 class="mono">Address</h3>
+          <p>Arch 3, 14 Coalyard Lane<br>London, E8 3SE</p>
+          <p class="visit-note">Two minutes from London Fields station.</p>
+        </div>
+        <div class="visit-block">
+          <h3 class="mono">Hours</h3>
+          <p>Monday – Friday<br>7:00am – 6:00pm</p>
+          <p>Saturday – Sunday<br>8:00am – 4:00pm</p>
+        </div>
+        <div class="visit-block">
+          <h3 class="mono">Get in touch</h3>
+          <p><a href="tel:+442071234567">+44 207 123 4567</a></p>
+          <p><a href="mailto:hello@emberandgrain.co">hello@emberandgrain.co</a></p>
+          <p class="visit-note">No table bookings — just walk in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
+    <div class="masthead-rule"></div>
     <div class="container footer-inner">
-      <span class="footer-brand">Ember & Grain</span>
-      <nav class="footer-nav">
+      <span class="footer-brand">Ember <em>&amp;</em> Grain</span>
+      <nav class="footer-nav mono" aria-label="Footer">
         <a href="#menu">Menu</a>
-        <a href="#about">About</a>
+        <a href="#story">Story</a>
         <a href="#visit">Visit</a>
       </nav>
-      <span class="copyright">© <span id="year"></span> Ember & Grain</span>
+      <span class="mono copyright">© <span id="year"></span> Ember &amp; Grain</span>
     </div>
   </footer>
 

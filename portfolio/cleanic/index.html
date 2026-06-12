@@ -1,96 +1,250 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Cleanic | Home & Office Cleaning Services</title>
-    <meta name="description" content="Professional home and office cleaning with fast online booking, custom plans, and trusted local cleaners.">
+    <title>The Cleanic — Home &amp; Office Cleaning | Free Quotes in Minutes</title>
+    <meta name="description" content="Professional home and office cleaning with fast online quotes, flexible plans, vetted local cleaners, and a satisfaction guarantee. Same-day booking available.">
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Expanded:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Utility bar -->
+    <div class="util-bar">
+        <div class="container util-inner">
+            <span>Mon–Sat · 8:00–18:00</span>
+            <span class="util-mid">Same-day booking available</span>
+            <a href="tel:+15551234567">(555) 123-4567</a>
+        </div>
+    </div>
+
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#home" class="brand">The Cleanic</a>
+            <a href="#home" class="brand">THE CLEANIC<span>■</span></a>
             <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
             <label for="menu-toggle" class="menu-button" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </label>
             <nav class="main-nav" aria-label="Primary navigation">
                 <ul>
-                    <li><a href="#plans">Plans</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#estimate">Get Quote</a></li>
+                    <li><a href="#proof">Results</a></li>
+                    <li><a href="#process">How it works</a></li>
+                    <li><a href="#plans">Plans</a></li>
                 </ul>
-                <a href="#estimate" class="button button-secondary">Book Now</a>
+                <a href="#estimate" class="button button-primary">Get a quote</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <span class="eyebrow">Trusted cleaning for busy homes</span>
-                    <h1>Remarkably Cleaner. Amazingly Simpler.</h1>
-                    <p class="hero-text">Effortless booking, flexible packages, and a reliable team that keeps your home sparkling all year long.</p>
+                    <p class="label">— Trusted cleaning for busy homes &amp; offices</p>
+                    <h1>Remarkably cleaner.<br>Amazingly simpler.</h1>
+                    <p class="hero-text">Get a tailored quote in minutes. Vetted cleaners, eco-friendly products, and a plan built around your schedule — not ours.</p>
                     <div class="hero-actions">
-                        <a href="#estimate" class="button button-primary">Get a Free Estimate</a>
-                        <a href="#services" class="button button-outline">See All Services</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div>
-                            <strong>4.9/5</strong>
-                            <span>Client rating</span>
-                        </div>
-                        <div>
-                            <strong>30+</strong>
-                            <span>Services offered</span>
-                        </div>
-                        <div>
-                            <strong>Same day</strong>
-                            <span>Booking available</span>
-                        </div>
+                        <a href="#estimate" class="button button-primary button-lg">Get a free quote</a>
+                        <a href="#services" class="button button-ghost button-lg">See services →</a>
                     </div>
                 </div>
-                <div class="hero-image" aria-hidden="true"></div>
+                <div class="hero-photo">
+                    <img src="images/woman2.webp" alt="Professional cleaner at work" loading="eager">
+                    <span class="hero-photo-tag">Vetted · Insured · Eco products</span>
+                </div>
+            </div>
+            <div class="container hero-stats">
+                <div><strong>4.9 / 5</strong><span>Average client rating</span></div>
+                <div><strong>30+</strong><span>Services offered</span></div>
+                <div><strong>Same day</strong><span>Booking available</span></div>
+                <div><strong>100%</strong><span>Satisfaction guarantee</span></div>
             </div>
         </section>
 
-        <section id="estimate" class="estimate-section">
+        <!-- SERVICES -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="sec-head">
+                    <p class="label">01 — Services</p>
+                    <h2>For anything your space needs</h2>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span class="card-num">S.01</span>
+                        <img src="images/book.webp" alt="Deep cleaning of a living space" loading="lazy">
+                        <h3>Deep Cleaning</h3>
+                        <p>Intensive top-to-bottom cleaning for kitchens, bathrooms, bedrooms, and living spaces.</p>
+                        <a href="#estimate" class="card-link">Get quote →</a>
+                    </article>
+                    <article class="service-card">
+                        <span class="card-num">S.02</span>
+                        <img src="images/floor.webp" alt="Move-in cleaning of an empty room" loading="lazy">
+                        <h3>Move In / Move Out</h3>
+                        <p>Professional end-of-tenancy cleaning that leaves every room ready for a fresh start.</p>
+                        <a href="#estimate" class="card-link">Get quote →</a>
+                    </article>
+                    <article class="service-card">
+                        <span class="card-num">S.03</span>
+                        <img src="images/towel.webp" alt="Folded laundry ready for delivery" loading="lazy">
+                        <h3>Laundry Pickup</h3>
+                        <p>Pickup, wash, fold, and delivery on your schedule with reliable turnaround.</p>
+                        <a href="#estimate" class="card-link">Get quote →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEFORE / AFTER -->
+        <section id="proof" class="section sec-bordered">
+            <div class="container ba-grid">
+                <div class="ba-copy">
+                    <p class="label">02 — Results</p>
+                    <h2>Cleaning that really shows</h2>
+                    <p>Upholstery, carpets, and fabrics restored with a difference you can see — not just smell.</p>
+                    <a href="#estimate" class="button button-primary">Book this service</a>
+                </div>
+                <div class="ba-images">
+                    <figure>
+                        <img src="images/before.webp" alt="Couch before professional cleaning" loading="lazy">
+                        <figcaption>Before</figcaption>
+                    </figure>
+                    <figure class="ba-after">
+                        <img src="images/after.webp" alt="Couch after professional cleaning" loading="lazy">
+                        <figcaption>After</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="section">
+            <div class="container">
+                <div class="sec-head">
+                    <p class="label">03 — How it works</p>
+                    <h2>Four steps to a cleaner space</h2>
+                </div>
+                <ol class="process-row">
+                    <li><span>01</span><h3>Request a quote</h3><p>Tell us about your space with the two-minute form.</p></li>
+                    <li><span>02</span><h3>Get your plan</h3><p>We reply with tailored pricing and availability.</p></li>
+                    <li><span>03</span><h3>We clean</h3><p>Vetted professionals arrive on time and handle everything.</p></li>
+                    <li><span>04</span><h3>You inspect</h3><p>Not satisfied? We re-clean free under our guarantee.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PLANS -->
+        <section id="plans" class="section sec-bordered">
+            <div class="container">
+                <div class="sec-head">
+                    <p class="label">04 — Plans &amp; discounts</p>
+                    <h2>Flexible plans for every home</h2>
+                </div>
+                <div class="plans-grid">
+                    <article class="plan-card">
+                        <h3>One-time</h3>
+                        <p class="plan-desc">A single visit — deep clean, move clean, or refresh before guests arrive.</p>
+                        <ul>
+                            <li>No commitment</li>
+                            <li>Same-day slots available</li>
+                            <li>All supplies included</li>
+                        </ul>
+                        <a href="#estimate" class="button button-ghost button-block">Get a quote</a>
+                    </article>
+                    <article class="plan-card plan-featured">
+                        <span class="plan-tag">Most popular</span>
+                        <h3>Weekly</h3>
+                        <p class="plan-desc">The same trusted cleaner, every week — with our best regular-plan discount.</p>
+                        <ul>
+                            <li>Biggest plan discount</li>
+                            <li>Priority scheduling</li>
+                            <li>Same cleaner each visit</li>
+                        </ul>
+                        <a href="#estimate" class="button button-primary button-block">Get a quote</a>
+                    </article>
+                    <article class="plan-card">
+                        <h3>Fortnightly</h3>
+                        <p class="plan-desc">Every two weeks — a balanced rhythm for tidy homes that need upkeep.</p>
+                        <ul>
+                            <li>Regular-plan discount</li>
+                            <li>Flexible rescheduling</li>
+                            <li>Same cleaner each visit</li>
+                        </ul>
+                        <a href="#estimate" class="button button-ghost button-block">Get a quote</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section">
+            <div class="container">
+                <div class="sec-head">
+                    <p class="label">05 — Happy clients</p>
+                    <h2>Shiny happy clients love The Cleanic</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <p class="t-title">“I'm addicted to The Cleanic!”</p>
+                        <p class="t-text">The team arrived on time, used eco products, and left my apartment sparkling. I already booked again.</p>
+                        <p class="t-author">Jane D. — Arkansas</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="t-title">“My flat looks like a boutique hotel.”</p>
+                        <p class="t-text">The attention to detail is amazing. Every room felt fresh and polished.</p>
+                        <p class="t-author">Eric L. — California</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="t-title">“Soft perfection.”</p>
+                        <p class="t-text">They cleaned the upholstery and carpets so well the whole space feels brand new.</p>
+                        <p class="t-author">Lena R. — Rhode Island</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="t-title">“Booking to checkout — smooth.”</p>
+                        <p class="t-text">Everything was effortless from start to finish. I highly recommend The Cleanic.</p>
+                        <p class="t-author">Jean M. — Connecticut</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE FORM -->
+        <section id="estimate" class="section estimate-section">
             <div class="container estimate-grid">
                 <div class="estimate-copy">
-                    <span class="section-label">Free estimate</span>
+                    <p class="label">06 — Free estimate</p>
                     <h2>Book your cleaning in minutes</h2>
-                    <p>Fill out the quick form and we’ll send a tailored plan, pricing, and availability for your home or office.</p>
+                    <p>Fill out the quick form and we'll send a tailored plan, pricing, and availability for your home or office — usually the same day.</p>
                     <ul class="benefits-list">
-                        <li>Professional cleaners you can trust</li>
-                        <li>Customized cleaning plans</li>
-                        <li>Eco-friendly and safe products</li>
+                        <li>Vetted, insured professionals</li>
+                        <li>Customised cleaning plans</li>
+                        <li>Eco-friendly, safe products</li>
+                        <li>Re-clean guarantee</li>
                     </ul>
+                    <div class="estimate-contact">
+                        <span>Prefer to talk?</span>
+                        <a href="tel:+15551234567">(555) 123-4567</a>
+                    </div>
                 </div>
-                <form class="estimate-form" action="#" method="post">
+                <form class="estimate-form" novalidate>
                     <div class="field-group">
                         <label for="first">First name *</label>
-                        <input type="text" id="first" name="first" placeholder="Enter your first name" required>
+                        <input type="text" id="first" name="first" placeholder="First name" required>
                     </div>
                     <div class="field-group">
                         <label for="last">Last name *</label>
-                        <input type="text" id="last" name="last" placeholder="Enter your last name" required>
+                        <input type="text" id="last" name="last" placeholder="Last name" required>
                     </div>
                     <div class="field-group">
                         <label for="email">Email *</label>
                         <input type="email" id="email" name="email" placeholder="you@example.com" required>
                     </div>
                     <div class="field-group">
-                        <label for="phone">Phone number *</label>
+                        <label for="phone">Phone *</label>
                         <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
                     </div>
                     <div class="field-group full-width">
@@ -102,151 +256,23 @@
                         <input type="text" id="city" name="city" placeholder="City" required>
                     </div>
                     <div class="field-group">
-                        <label for="rooms">Number of rooms *</label>
+                        <label for="rooms">Rooms *</label>
                         <input type="number" id="rooms" name="rooms" placeholder="3" min="1" required>
                     </div>
                     <div class="field-group full-width">
-                        <label for="service">Choose your service *</label>
+                        <label for="service">Service *</label>
                         <select id="service" name="service" required>
                             <option value="" disabled selected>Select a service</option>
                             <option>Standard home cleaning</option>
                             <option>Deep cleaning</option>
                             <option>Move in / move out</option>
                             <option>Laundry pickup</option>
+                            <option>Office cleaning</option>
                         </select>
                     </div>
-                    <button type="submit" class="button button-primary submit-button">Get a Quote</button>
+                    <button type="submit" class="button button-primary button-block submit-button">Get my free quote</button>
+                    <p class="form-feedback" aria-live="polite"></p>
                 </form>
-            </div>
-        </section>
-
-        <section class="testimonial-section">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-label">Happy clients</span>
-                    <h2>Shiny happy clients love The Cleanic</h2>
-                </div>
-                <div class="testimonial-grid">
-                    <article class="testimonial-card">
-                        <p class="testimonial-title">“I’m addicted to The Cleanic!”</p>
-                        <p class="testimonial-text">“The team arrived on time, used eco products, and left my apartment sparkling. I already booked again.”</p>
-                        <p class="testimonial-author">Jane D., AR</p>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-title">“My flat looks like a boutique hotel.”</p>
-                        <p class="testimonial-text">“The attention to detail is amazing. Every room felt fresh and polished.”</p>
-                        <p class="testimonial-author">Eric L., CA</p>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-title">“Soft perfection.”</p>
-                        <p class="testimonial-text">“They cleaned the upholstery and carpets so well the whole space feels brand new.”</p>
-                        <p class="testimonial-author">Lena R., RI</p>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-title">“I’m obsessed.”</p>
-                        <p class="testimonial-text">“Everything from booking to checkout was smooth. I highly recommend The Cleanic.”</p>
-                        <p class="testimonial-author">Jean M., CT</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="services-section">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-label">Services</span>
-                    <h2>For anything you need</h2>
-                </div>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <img src="images/floor.webp" alt="Move-in cleaning" class="service-image">
-                        <h3>Move In / Move Out</h3>
-                        <p>Professional move cleaning that leaves every room ready for a fresh start.</p>
-                    </article>
-                    <article class="service-card">
-                        <img src="images/book.webp" alt="Deep cleaning" class="service-image">
-                        <h3>Deep Cleaning</h3>
-                        <p>Intensive cleaning for kitchens, bathrooms, bedrooms, and living spaces.</p>
-                    </article>
-                    <article class="service-card">
-                        <img src="images/towel.webp" alt="Laundry service" class="service-image">
-                        <h3>Laundry Pickup</h3>
-                        <p>Pickup, wash, fold, and delivery with a reliable laundry service.</p>
-                    </article>
-                </div>
-                <div class="section-action">
-                    <a href="#estimate" class="button button-secondary">See all services</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="before-after-section">
-            <div class="container before-after-grid">
-                <div class="before-after-copy">
-                    <span class="section-label">Before & After</span>
-                    <h2>Couch cleaning that really shows</h2>
-                    <p>See how professional cleaning restores furniture, fabrics, and upholstery with a noticeable difference.</p>
-                </div>
-                <div class="before-after-images">
-                    <figure>
-                        <img src="images/before.webp" alt="Before couch cleaning" class="before-after-image">
-                        <figcaption>Before</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/after.webp" alt="After couch cleaning" class="before-after-image">
-                        <figcaption>After</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="process-section">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-label">How it works</span>
-                    <h2>Simple steps to a cleaner home</h2>
-                </div>
-                <div class="process-grid">
-                    <article class="process-card">
-                        <img src="images/clint1.png" alt="Choose cleaning service" class="process-icon">
-                        <h3>Choose a service</h3>
-                        <p>Pick the cleaning plan that fits your home or office.</p>
-                    </article>
-                    <article class="process-card">
-                        <img src="images/clint3.png" alt="Laundry pickup" class="process-icon">
-                        <h3>Schedule pickup</h3>
-                        <p>Book a convenient time for our team to arrive and handle the work.</p>
-                    </article>
-                    <article class="process-card">
-                        <img src="images/clint2.png" alt="Handoff keys" class="process-icon">
-                        <h3>Relax while we clean</h3>
-                        <p>Leave the keys and relax while our professionals do the rest.</p>
-                    </article>
-                    <article class="process-card">
-                        <img src="images/clint2.png" alt="Clean home" class="process-icon">
-                        <h3>Enjoy your space</h3>
-                        <p>Return to a spotless home and breathe easier.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="plans" class="plans-section">
-            <div class="container plans-grid">
-                <div class="plans-copy">
-                    <span class="section-label">Plans & discounts</span>
-                    <h2>Flexible plans for every home</h2>
-                    <p>Choose a single visit or a regular cleaning plan with discounts for weekly and monthly customers.</p>
-                    <a href="#estimate" class="button button-primary">Choose Your Plan</a>
-                </div>
-                <div class="plans-image"><img src="images/sec3.png" alt="Cleaning plan preview"></div>
-            </div>
-        </section>
-
-        <section class="gallery-section">
-            <div class="container gallery-grid">
-                <div class="gallery-image"><img src="images/handgirl.png" alt="Happy cleaner"></div>
-                <div class="gallery-image"><img src="images/side.png" alt="Cleaning service preview"></div>
             </div>
         </section>
     </main>
@@ -254,8 +280,8 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a href="#home" class="brand footer-brand">The Cleanic</a>
-                <p>Professional cleaning for busy homes and offices with a satisfaction guarantee.</p>
+                <a href="#home" class="brand footer-brand">THE CLEANIC<span>■</span></a>
+                <p>Professional cleaning for busy homes and offices, backed by a satisfaction guarantee.</p>
             </div>
             <div>
                 <h3>Quick links</h3>
@@ -263,15 +289,51 @@
                     <li><a href="#estimate">Get a quote</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#plans">Plans</a></li>
+                    <li><a href="#proof">Results</a></li>
                 </ul>
             </div>
             <div>
                 <h3>Contact</h3>
                 <p>123 Clean Street, Suite 100</p>
-                <p>(555) 123-4567</p>
-                <p>hello@thecleanic.com</p>
+                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                <p><a href="mailto:hello@thecleanic.com">hello@thecleanic.com</a></p>
             </div>
         </div>
+        <div class="container footer-bottom">
+            <span>© <span id="year"></span> The Cleanic</span>
+            <span>Vetted · Insured · Guaranteed</span>
+        </div>
     </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.estimate-form');
+        var feedback = document.querySelector('.form-feedback');
+        if (form && feedback) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var ok = true;
+                form.querySelectorAll('[required]').forEach(function (field) {
+                    var bad = !field.value || (field.type === 'email' && !field.checkValidity());
+                    field.classList.toggle('field-error', bad);
+                    if (bad) ok = false;
+                });
+                if (!ok) {
+                    feedback.textContent = 'Please complete all required fields.';
+                    feedback.classList.remove('ok');
+                    return;
+                }
+                feedback.textContent = 'Thank you — your quote request is in. We’ll reply with a tailored plan today.';
+                feedback.classList.add('ok');
+                form.reset();
+            });
+            form.addEventListener('input', function (e) {
+                e.target.classList.remove('field-error');
+            });
+        }
+        var year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+    });
+    </script>
 </body>
 </html>

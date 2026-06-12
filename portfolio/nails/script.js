@@ -1,28 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const services = [
-    { img: 'images/svc1.jpg', title: 'Classic Manicure', price: '$25', desc: 'Shaping, cuticle care, and a flawless polish finish.' },
-    { img: 'images/svc2.jpg', title: 'Gel Polish', price: '$40', desc: 'Premium long-lasting gel with a glossy shine.' },
-    { img: 'images/svc3.jpg', title: 'Color Change', price: '$15', desc: 'Refresh your look with a fresh color change.' },
-    { img: 'images/svc4.jpg', title: 'Nail Art & Design', price: '$55', desc: 'Custom hand-painted looks for every style.' },
-  ];
-
-  const grid = document.getElementById('services-grid');
-  if (grid) {
-    grid.innerHTML = services
-      .map(service => `
-        <article class="service-card reveal">
-          <div class="img-wrap"><img src="${service.img}" alt="${service.title}" loading="lazy" /></div>
-          <h3>${service.title}</h3>
-          <p class="desc">${service.desc}</p>
-          <p class="price">${service.price}</p>
-        </article>
-      `)
-      .join('');
-  }
-
+  // Mobile menu
   const menuBtn = document.getElementById('menu-toggle');
   const mobileNav = document.getElementById('mobile-nav');
-  const header = document.querySelector('.site-header');
 
   if (menuBtn && mobileNav) {
     const closeMenu = () => {
@@ -40,146 +19,98 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNav.setAttribute('aria-hidden', String(!isOpen));
     });
 
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    document.addEventListener('click', event => {
-      if (!mobileNav.contains(event.target) && !menuBtn.contains(event.target) && mobileNav.classList.contains('open')) {
-        closeMenu();
-      }
-    });
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   }
 
-  if (header) {
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 20);
-    });
-  }
-
-  const form = document.querySelector('.contact-form');
-  const messageEl = document.querySelector('.form-message');
-
-  if (form && messageEl) {
-    const nameField = form.querySelector('#name');
-    const emailField = form.querySelector('#email');
-    const messageField = form.querySelector('#message');
-
-    const showMessage = (text, success = false) => {
-      messageEl.textContent = text;
-      messageEl.classList.toggle('success', success);
-    };
-
-    const validateFields = () => {
-      let valid = true;
-
-      [nameField, emailField, messageField].forEach(field => {
-        if (!field || !field.value.trim()) {
-          field?.setAttribute('aria-invalid', 'true');
-          valid = false;
-        } else {
-          field?.removeAttribute('aria-invalid');
-        }
-      });
-
-      if (emailField && emailField.value.trim()) {
-        const isEmailValid = emailField.checkValidity();
-        if (!isEmailValid) {
-          emailField.setAttribute('aria-invalid', 'true');
-          valid = false;
-        }
-      }
-
-      return valid;
-    };
-
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      if (!validateFields()) {
-        showMessage('Please complete all fields and enter a valid email address.', false);
-        return;
-      }
-      showMessage('Thank you! Your request has been received. Natalia will contact you soon.', true);
-      form.reset();
-      [nameField, emailField, messageField].forEach(field => field?.removeAttribute('aria-invalid'));
-    });
-
-    [nameField, emailField, messageField].forEach(field => {
-      field?.addEventListener('input', () => {
-        field.removeAttribute('aria-invalid');
-        if (messageEl.classList.contains('success')) {
-          messageEl.textContent = '';
-          messageEl.classList.remove('success');
-        }
-      });
-    });
-  }
-
+  // Testimonial rotation
   const testimonials = [
-    { quote: 'Natalia created the most elegant nails I have ever had. Every visit feels calm, precise, and polished to last.', author: '— Maria, Lukovit' },
-    { quote: 'The details are incredible, and the result lasted even longer than expected.', author: '— Elena, Sofia' },
-    { quote: 'A relaxing experience from start to finish, with gentle care and beautiful design.', author: '— Viki, Veliko Tarnovo' },
-    { quote: 'I felt welcome and well looked after. The shine stayed perfect for weeks.', author: '— Nina, Lovech' },
+    { quote: '“Natalia created the most elegant nails I have ever had. Every visit feels calm, precise, and polished to last.”', author: 'Maria — Lukovit' },
+    { quote: '“The details are incredible, and the result lasted even longer than expected.”', author: 'Elena — Sofia' },
+    { quote: '“A relaxing experience from start to finish, with gentle care and beautiful design.”', author: 'Viki — Veliko Tarnovo' },
+    { quote: '“I felt welcome and well looked after. The shine stayed perfect for weeks.”', author: 'Nina — Lovech' },
   ];
 
-  let testimonialIndex = 0;
   const quoteEl = document.getElementById('testimonial-quote');
   const authorEl = document.getElementById('testimonial-author');
   const prevBtn = document.getElementById('testimonial-prev');
   const nextBtn = document.getElementById('testimonial-next');
-  let testimonialTimer;
+  const dotsEl = document.getElementById('quote-dots');
+  let index = 0;
+  let timer;
 
-  const updateTestimonial = index => {
-    const item = testimonials[index];
-    if (!item || !quoteEl || !authorEl) return;
-    quoteEl.textContent = item.quote;
-    authorEl.textContent = item.author;
+  const render = () => {
+    if (!quoteEl || !authorEl) return;
+    quoteEl.textContent = testimonials[index].quote;
+    authorEl.textContent = testimonials[index].author;
+    if (dotsEl) {
+      dotsEl.querySelectorAll('i').forEach((dot, i) => dot.classList.toggle('on', i === index));
+    }
   };
 
-  const showTestimonial = direction => {
-    testimonialIndex = (testimonialIndex + direction + testimonials.length) % testimonials.length;
-    updateTestimonial(testimonialIndex);
+  const step = dir => {
+    index = (index + dir + testimonials.length) % testimonials.length;
+    render();
   };
 
-  const resetTestimonialTimer = () => {
-    clearInterval(testimonialTimer);
-    testimonialTimer = setInterval(() => showTestimonial(1), 6000);
+  const resetTimer = () => {
+    clearInterval(timer);
+    timer = setInterval(() => step(1), 6500);
   };
 
-  if (prevBtn && nextBtn && quoteEl && authorEl) {
-    prevBtn.addEventListener('click', () => {
-      showTestimonial(-1);
-      resetTestimonialTimer();
-    });
-
-    nextBtn.addEventListener('click', () => {
-      showTestimonial(1);
-      resetTestimonialTimer();
-    });
-
-    updateTestimonial(testimonialIndex);
-    resetTestimonialTimer();
+  if (quoteEl && authorEl && prevBtn && nextBtn) {
+    if (dotsEl) {
+      dotsEl.innerHTML = testimonials.map(() => '<i></i>').join('');
+    }
+    prevBtn.addEventListener('click', () => { step(-1); resetTimer(); });
+    nextBtn.addEventListener('click', () => { step(1); resetTimer(); });
+    render();
+    resetTimer();
   }
 
-  const yearElement = document.getElementById('year');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+  // Form validation
+  const form = document.querySelector('.visit-form');
+  const messageEl = document.querySelector('.form-message');
+
+  if (form && messageEl) {
+    const fields = ['#name', '#email', '#message'].map(sel => form.querySelector(sel));
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      let valid = true;
+      fields.forEach(field => {
+        const bad = !field.value.trim() || (field.type === 'email' && !field.checkValidity());
+        field.toggleAttribute('aria-invalid', bad);
+        if (bad) valid = false;
+      });
+      if (!valid) {
+        messageEl.textContent = 'Please complete all fields with a valid email address.';
+        messageEl.classList.remove('success');
+        return;
+      }
+      messageEl.textContent = 'Thank you — your request has been received. Natalia will contact you soon.';
+      messageEl.classList.add('success');
+      form.reset();
+      fields.forEach(field => field.removeAttribute('aria-invalid'));
+    });
+
+    fields.forEach(field => field.addEventListener('input', () => field.removeAttribute('aria-invalid')));
   }
 
+  // Year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.18 }
-    );
-
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
     reveals.forEach(el => io.observe(el));
   } else {
     reveals.forEach(el => el.classList.add('visible'));

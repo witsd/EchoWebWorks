@@ -1,72 +1,95 @@
-// Aquatica — subtle scroll-reveal, smooth anchor scrolling, mobile nav, and accessible form feedback
+// Aquatica — nav toggle, animated stat counters, form feedback, scroll reveal
 
 (function () {
   'use strict';
 
-  // Smooth scroll for in-page anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      var id = a.getAttribute('href');
-      if (!id || id === '#') return;
-      var target = document.querySelector(id);
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
+  document.addEventListener('DOMContentLoaded', () => {
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('primary-navigation');
 
-  // Reveal-on-scroll using IntersectionObserver
-  var reveals = document.querySelectorAll('.reveal');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        const open = links.dataset.visible === 'true';
+        links.dataset.visible = String(!open);
+        toggle.setAttribute('aria-expanded', String(!open));
+      });
+      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        links.dataset.visible = 'false';
+        toggle.setAttribute('aria-expanded', 'false');
+      }));
+    }
 
-  if (!('IntersectionObserver' in window)) {
-    reveals.forEach(function (el) { el.classList.add('in'); });
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
+    // Pool search feedback
+    const search = document.querySelector('.search');
+    const feedback = document.getElementById('pool-search-feedback');
+
+    if (search && feedback) {
+      search.addEventListener('submit', e => {
+        e.preventDefault();
+        const input = search.querySelector('input');
+        const value = input.value.trim();
+        feedback.textContent = value
+          ? `Great news — we have coached sessions near "${value}". Book below and we'll confirm your nearest pool.`
+          : 'Enter your town, city or postcode to find your nearest pool.';
+      });
+    }
+
+    // CTA email form
+    const ctaForm = document.querySelector('.cta-form');
+    const ctaFeedback = document.querySelector('.cta-feedback');
+
+    if (ctaForm && ctaFeedback) {
+      ctaForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const input = ctaForm.querySelector('input');
+        if (!input.value.trim() || !input.checkValidity()) {
+          ctaFeedback.textContent = 'Please enter a valid email address.';
+          return;
         }
+        ctaFeedback.textContent = 'Thank you — we’ll be in touch within one working day to arrange your first session.';
+        ctaForm.reset();
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }
 
-    reveals.forEach(function (el) { io.observe(el); });
-  }
+    // Animated counters
+    const counters = document.querySelectorAll('.stat-n[data-count]');
+    const animate = el => {
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1400;
+      const start = performance.now();
+      const tick = now => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
 
-  // Mobile menu toggle
-  var navToggle = document.querySelector('.nav-toggle');
-  var navLinks = document.getElementById('primary-navigation');
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', function () {
-      var expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      navLinks.dataset.visible = String(!expanded);
-    });
+    // Scroll reveal (also triggers counters)
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            entry.target.querySelectorAll('.stat-n[data-count]').forEach(animate);
+            if (entry.target.matches('.stat-n[data-count]')) animate(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      reveals.forEach(el => io.observe(el));
+      counters.forEach(el => { if (!el.closest('.reveal')) io.observe(el); });
+    } else {
+      reveals.forEach(el => el.classList.add('visible'));
+      counters.forEach(animate);
+    }
 
-    navLinks.querySelectorAll('a[href^="#"]').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navToggle.setAttribute('aria-expanded', 'false');
-        navLinks.dataset.visible = 'false';
-      });
-    });
-  }
-
-  // Find-a-pool form feedback handler
-  var form = document.querySelector('.search');
-  var feedback = document.getElementById('pool-search-feedback');
-
-  if (form && feedback) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      var input = form.querySelector('input');
-      var value = input && input.value.trim();
-
-      if (!value) {
-        feedback.textContent = 'Please enter a town, city, or postcode to search nearby pools.';
-        return;
-      }
-
-      feedback.textContent = 'Searching pools near ' + value + '...';
-    });
-  }
+    // Year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  });
 })();

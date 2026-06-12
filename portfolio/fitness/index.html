@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Peak Form — Personal Training, London</title>
-  <meta name="description" content="Peak Form personal training. Every program is written from scratch. Marcus has coached 400 clients over 8 years. Book your free session." />
-  <meta name="theme-color" content="#0A0A0A" />
+  <title>Peak Form — Personal Training, London | First Session Free</title>
+  <meta name="description" content="Peak Form personal training, London. Every program written from scratch. 400+ clients coached, 94% hit their goal. Strength, HIIT, body recomposition. First session free." />
+  <meta name="theme-color" content="#f5f4f0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,248 +16,221 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="header-inner">
-      <a href="#main" class="wordmark">PEAK<span class="lime">FORM</span></a>
-      <nav class="desktop-nav">
+    <div class="container header-inner">
+      <a href="#main" class="wordmark">PEAK<span>FORM</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#programs">Programs</a>
         <a href="#coaches">Coaches</a>
+        <a href="#results">Results</a>
         <a href="#pricing">Pricing</a>
       </nav>
-      <a href="#pricing" class="header-cta">Book free session</a>
+      <a href="#pricing" class="btn-grad header-cta">Free first session</a>
       <button class="hamburger" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
       <a href="#programs">Programs</a>
       <a href="#coaches">Coaches</a>
+      <a href="#results">Results</a>
       <a href="#pricing">Pricing</a>
-      <a href="#pricing" class="btn-primary">Book free session</a>
+      <a href="#pricing" class="btn-grad">Free first session</a>
     </nav>
   </header>
 
   <main id="main">
 
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <p class="hero-label">Personal Training Studio — London</p>
-        <h1>Every program<br>is written<br><em>from scratch.</em></h1>
+        <p class="hero-label">Personal training studio — London</p>
+        <h1 class="skew">Every program<br>is written<br><em>from scratch.</em></h1>
         <div class="hero-body">
           <p>No templates. No guesswork. Marcus has coached 400 clients over 8 years. 94% hit their stated goal. The other 6% didn't show up.</p>
-          <a href="#pricing" class="btn-primary">Book your free session</a>
+          <a href="#pricing" class="btn-grad btn-lg">Book your free session</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-n">400+</span>
-            <span class="stat-l">Clients trained</span>
-          </div>
-          <div class="stat-rule"></div>
-          <div class="stat">
-            <span class="stat-n">94%</span>
-            <span class="stat-l">Hit their goal</span>
-          </div>
-          <div class="stat-rule"></div>
-          <div class="stat">
-            <span class="stat-n">8 yrs</span>
-            <span class="stat-l">Coaching experience</span>
-          </div>
+      </div>
+      <div class="stats-band">
+        <div class="container stats-inner">
+          <div class="stat"><span class="stat-n">400+</span><span class="stat-l">Clients trained</span></div>
+          <div class="stat"><span class="stat-n">94%</span><span class="stat-l">Hit their goal</span></div>
+          <div class="stat"><span class="stat-n">8 yrs</span><span class="stat-l">Coaching experience</span></div>
+          <div class="stat"><span class="stat-n">£0</span><span class="stat-l">First session</span></div>
         </div>
       </div>
     </section>
 
+    <!-- PROGRAMS -->
     <section id="programs" class="section-programs">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="label">Training programs</p>
-          <h2>Built around<br>your goal.</h2>
+          <h2 class="skew">Built around <em>your goal.</em></h2>
         </div>
         <div class="programs-list">
 
           <article class="program-row reveal">
-            <div class="prog-left">
-              <span class="prog-n">01</span>
-              <div>
-                <h3>Strength Foundation</h3>
-                <ul class="prog-meta">
-                  <li>12 weeks</li>
-                  <li>3 sessions/week</li>
-                  <li>1-on-1 coaching</li>
-                </ul>
-              </div>
+            <span class="prog-n" aria-hidden="true">01</span>
+            <div class="prog-info">
+              <h3>Strength Foundation</h3>
+              <ul class="prog-meta">
+                <li>12 weeks</li><li>3 sessions/week</li><li>1-on-1 coaching</li>
+              </ul>
+              <p>Structured compound lifting, progressive overload, and full coaching at every session. Your first meeting is a proper strength assessment — the program gets written from that, not from a template.</p>
             </div>
-            <div class="prog-right">
-              <p>Structured compound lifting, progressive overload, and full coaching at every session. Your first meeting is a proper strength assessment — movement screen, current lifts, what you're working toward. The program gets written from that, not from a template.</p>
-              <a href="#pricing" class="prog-link">From £149/month →</a>
+            <a href="#pricing" class="prog-link">From £149/mo<span aria-hidden="true"> →</span></a>
+          </article>
+
+          <article class="program-row prog-hot reveal">
+            <span class="prog-n" aria-hidden="true">02</span>
+            <div class="prog-info">
+              <h3>Performance HIIT <span class="prog-tag">Most popular</span></h3>
+              <ul class="prog-meta">
+                <li>8 weeks</li><li>4 sessions/week</li><li>Group + 1-on-1</li>
+              </ul>
+              <p>High-intensity conditioning without the generic bootcamp format. Groups of four maximum, heart rate monitored throughout. More in 50 minutes than most people do in two hours.</p>
             </div>
+            <a href="#pricing" class="prog-link">From £149/mo<span aria-hidden="true"> →</span></a>
           </article>
 
           <article class="program-row reveal">
-            <div class="prog-left">
-              <span class="prog-n">02</span>
-              <div>
-                <h3>Performance HIIT <span class="prog-tag">Most popular</span></h3>
-                <ul class="prog-meta">
-                  <li>8 weeks</li>
-                  <li>4 sessions/week</li>
-                  <li>Group + 1-on-1</li>
-                </ul>
-              </div>
+            <span class="prog-n" aria-hidden="true">03</span>
+            <div class="prog-info">
+              <h3>Body Recomposition</h3>
+              <ul class="prog-meta">
+                <li>16 weeks</li><li>5 sessions/week</li><li>Training + nutrition</li>
+              </ul>
+              <p>Simultaneous fat loss and muscle gain — training blocks plus a personalised nutrition plan, weekly body composition checks, and monthly program reviews. This one works if you work it.</p>
             </div>
-            <div class="prog-right">
-              <p>High-intensity conditioning without the generic bootcamp format. Aisha runs small groups of four maximum, so every session has real coaching attention. Heart rate monitored throughout. You'll do more in 50 minutes than most people do in two hours.</p>
-              <a href="#pricing" class="prog-link">From £149/month →</a>
-            </div>
+            <a href="#pricing" class="prog-link">From £299/mo<span aria-hidden="true"> →</span></a>
           </article>
 
           <article class="program-row reveal">
-            <div class="prog-left">
-              <span class="prog-n">03</span>
-              <div>
-                <h3>Body Recomposition</h3>
-                <ul class="prog-meta">
-                  <li>16 weeks</li>
-                  <li>5 sessions/week</li>
-                  <li>Training + nutrition</li>
-                </ul>
-              </div>
+            <span class="prog-n" aria-hidden="true">04</span>
+            <div class="prog-info">
+              <h3>Sport-Specific Prep</h3>
+              <ul class="prog-meta">
+                <li>Custom schedule</li><li>Variable duration</li><li>1-on-1 coaching</li>
+              </ul>
+              <p>Marathon training, pre-season rugby conditioning, triathlon prep, martial arts strength work — built backward from your race day, match date or competition window.</p>
             </div>
-            <div class="prog-right">
-              <p>Simultaneous fat loss and muscle gain, which takes longer and more precision than either alone. Ryan combines a training block with a personalised nutrition plan. Weekly body composition checks. Monthly program reviews. This one works if you work it.</p>
-              <a href="#pricing" class="prog-link">From £299/month →</a>
-            </div>
-          </article>
-
-          <article class="program-row reveal">
-            <div class="prog-left">
-              <span class="prog-n">04</span>
-              <div>
-                <h3>Sport-Specific Prep</h3>
-                <ul class="prog-meta">
-                  <li>Custom schedule</li>
-                  <li>Variable duration</li>
-                  <li>1-on-1 coaching</li>
-                </ul>
-              </div>
-            </div>
-            <div class="prog-right">
-              <p>Built around a specific event, season or sport. Marathon training, pre-season rugby conditioning, triathlon preparation, martial arts strength work. The program is built backward from your race day, match date or competition window.</p>
-              <a href="#pricing" class="prog-link">Pricing on request →</a>
-            </div>
+            <a href="#pricing" class="prog-link">On request<span aria-hidden="true"> →</span></a>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- COACHES (dark band) -->
     <section id="coaches" class="section-coaches">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="label">The coaches</p>
-          <h2>Three coaches.<br>One approach.</h2>
+          <h2 class="skew">Three coaches.<br><em>One approach.</em></h2>
         </div>
-        <div class="coaches-list">
-
-          <div class="coach-row reveal">
-            <div class="coach-left">
-              <h3>Marcus Jones</h3>
-              <p class="coach-role">Head Coach — Strength & Conditioning</p>
-            </div>
-            <div class="coach-right">
-              <p>Eight years coaching. NSCA-CSCS certified, Precision Nutrition Level 2. He competed in powerlifting at national level for five years, which means he understands the difference between training for performance and training for aesthetics — and can deliver both. Every program that goes out from Peak Form is written or reviewed by Marcus before the first session.</p>
-              <ul class="coach-certs">
-                <li>NSCA-CSCS</li>
-                <li>Precision Nutrition L2</li>
-                <li>5× National Powerlifting Competitor</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="coach-row reveal">
-            <div class="coach-left">
-              <h3>Aisha Lowe</h3>
-              <p class="coach-role">Performance Coach — Conditioning & Mobility</p>
-            </div>
-            <div class="coach-right">
-              <p>Former 400m sprinter, GB development squad, now eight years into coaching. She leads all HIIT programming and runs the group conditioning sessions. Her technical cueing is unusually precise for a conditioning coach — she came up through track athletics, where form is non-negotiable. She's also the best person in the building to talk to about injury prevention.</p>
-              <ul class="coach-certs">
-                <li>ACSM-CPT</li>
-                <li>FMS Level 2</li>
-                <li>Track & Field GB Alumni</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="coach-row reveal">
-            <div class="coach-left">
-              <h3>Ryan Kim</h3>
-              <p class="coach-role">Nutrition & Body Recomposition Coach</p>
-            </div>
-            <div class="coach-right">
-              <p>MSc in Sports Nutrition, ISSN-SNS certified, ACE personal trainer. Ryan handles all nutrition coaching and leads the body recomposition program. He's not interested in fad diets or extreme deficits — the plans he builds are meant to be followed for months, not abandoned after three weeks. He also handles the quarterly nutrition audits for the Elite plan members.</p>
-              <ul class="coach-certs">
-                <li>ISSN-SNS</li>
-                <li>ACE-CPT</li>
-                <li>MSc Sport Nutrition</li>
-              </ul>
-            </div>
-          </div>
-
+        <div class="coaches-grid">
+          <article class="coach reveal">
+            <h3>Marcus Jones</h3>
+            <p class="coach-role">Head Coach — Strength &amp; Conditioning</p>
+            <p class="coach-bio">Eight years coaching, five years competing in powerlifting at national level. Every program that leaves Peak Form is written or reviewed by Marcus before the first session.</p>
+            <ul class="coach-certs">
+              <li>NSCA-CSCS</li><li>Precision Nutrition L2</li><li>5× National Powerlifting</li>
+            </ul>
+          </article>
+          <article class="coach reveal">
+            <h3>Aisha Lowe</h3>
+            <p class="coach-role">Performance Coach — Conditioning &amp; Mobility</p>
+            <p class="coach-bio">Former 400m sprinter, GB development squad. Leads all HIIT programming with track-athletics precision — and the best person in the building on injury prevention.</p>
+            <ul class="coach-certs">
+              <li>ACSM-CPT</li><li>FMS Level 2</li><li>Track &amp; Field GB Alumni</li>
+            </ul>
+          </article>
+          <article class="coach reveal">
+            <h3>Ryan Kim</h3>
+            <p class="coach-role">Nutrition &amp; Body Recomposition Coach</p>
+            <p class="coach-bio">MSc in Sports Nutrition. No fad diets, no extreme deficits — plans built to be followed for months, not abandoned after three weeks.</p>
+            <ul class="coach-certs">
+              <li>ISSN-SNS</li><li>ACE-CPT</li><li>MSc Sport Nutrition</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <!-- RESULTS -->
+    <section id="results" class="section-results">
       <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Results</p>
+          <h2 class="skew">Proof, <em>not promises.</em></h2>
+        </div>
         <div class="testi-grid">
           <blockquote class="testi reveal">
-            <p>"14kg in four months. I'd failed at every gym membership for six years. The difference was someone writing a program specifically for me and being there when I trained."</p>
-            <cite>Daniel H. — Body recomposition</cite>
+            <span class="testi-mark" aria-hidden="true">“</span>
+            <p>14kg in four months. I'd failed at every gym membership for six years. The difference was someone writing a program specifically for me and being there when I trained.</p>
+            <cite>Daniel H. — Body Recomposition</cite>
           </blockquote>
           <blockquote class="testi reveal">
-            <p>"Marcus coached me to a 180kg squat PB at my first powerlifting meet. He understood exactly where my weaknesses were and built around them."</p>
-            <cite>Sarah N. — Strength foundation</cite>
+            <span class="testi-mark" aria-hidden="true">“</span>
+            <p>Marcus coached me to a 180kg squat PB at my first powerlifting meet. He understood exactly where my weaknesses were and built around them.</p>
+            <cite>Sarah N. — Strength Foundation</cite>
           </blockquote>
           <blockquote class="testi reveal">
-            <p>"Aisha's sessions are hard. Properly hard. But her technical coaching is exceptional — I move better now than I did at 25."</p>
+            <span class="testi-mark" aria-hidden="true">“</span>
+            <p>Aisha's sessions are hard. Properly hard. But her technical coaching is exceptional — I move better now than I did at 25.</p>
             <cite>Paul W. — Performance HIIT</cite>
           </blockquote>
         </div>
       </div>
     </section>
 
+    <!-- PRICING -->
     <section id="pricing" class="section-pricing">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="label">Pricing</p>
-          <h2>Straightforward.</h2>
+          <h2 class="skew"><em>Straightforward.</em></h2>
           <p class="pricing-sub">No contracts. No joining fees. Your first session is free — book it, see if it's the right fit, then decide.</p>
         </div>
-        <div class="pricing-table">
-          <div class="pricing-row header-row">
-            <span>Plan</span>
-            <span>What's included</span>
-            <span>Per month</span>
-          </div>
-          <div class="pricing-row reveal">
-            <div class="plan-name">Starter</div>
-            <div class="plan-includes">4 coached sessions · Custom training plan · Weekly check-in · App tracking</div>
-            <div class="plan-price">£149</div>
-          </div>
-          <div class="pricing-row featured reveal">
-            <div class="plan-name">Peak <span class="best-val">Best value</span></div>
-            <div class="plan-includes">12 coached sessions · Training + nutrition plan · Unlimited messaging · Bi-weekly body composition · Monthly program review</div>
-            <div class="plan-price">£299</div>
-          </div>
-          <div class="pricing-row reveal">
-            <div class="plan-name">Elite</div>
-            <div class="plan-includes">Unlimited sessions · Daily check-ins · Full nutrition coaching · Weekly video review · Priority access</div>
-            <div class="plan-price">£499</div>
-          </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price"><span>£149</span>/month</p>
+            <ul>
+              <li>4 coached sessions</li>
+              <li>Custom training plan</li>
+              <li>Weekly check-in</li>
+              <li>App tracking</li>
+            </ul>
+            <a href="mailto:hello@peakform.co" class="btn-line btn-block">Book free session</a>
+          </article>
+          <article class="price-card price-featured reveal">
+            <span class="best-val">Best value</span>
+            <h3>Peak</h3>
+            <p class="price"><span>£299</span>/month</p>
+            <ul>
+              <li>12 coached sessions</li>
+              <li>Training + nutrition plan</li>
+              <li>Unlimited messaging</li>
+              <li>Bi-weekly body composition</li>
+              <li>Monthly program review</li>
+            </ul>
+            <a href="mailto:hello@peakform.co" class="btn-grad btn-block">Book free session</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Elite</h3>
+            <p class="price"><span>£499</span>/month</p>
+            <ul>
+              <li>Unlimited sessions</li>
+              <li>Daily check-ins</li>
+              <li>Full nutrition coaching</li>
+              <li>Weekly video review</li>
+              <li>Priority access</li>
+            </ul>
+            <a href="mailto:hello@peakform.co" class="btn-line btn-block">Book free session</a>
+          </article>
         </div>
-        <div class="pricing-foot reveal">
-          <p>Corporate rates and team packages available. <a href="mailto:hello@peakform.co">Get in touch.</a></p>
-          <a href="mailto:hello@peakform.co" class="btn-primary">Book your free session</a>
-        </div>
+        <p class="pricing-foot reveal">Corporate rates and team packages available — <a href="mailto:hello@peakform.co">get in touch</a>.</p>
       </div>
     </section>
 
@@ -265,8 +238,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="footer-brand">PEAK<span class="lime">FORM</span></span>
-      <nav class="footer-nav">
+      <span class="wordmark">PEAK<span>FORM</span></span>
+      <nav class="footer-nav" aria-label="Footer">
         <a href="#programs">Programs</a>
         <a href="#coaches">Coaches</a>
         <a href="#pricing">Pricing</a>

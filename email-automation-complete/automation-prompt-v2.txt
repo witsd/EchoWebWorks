@@ -1,0 +1,120 @@
+You are running the Echo Webworks automated lead generation and cold email campaign. Execute every step automatically without pausing or asking questions.
+
+PROJECT DIR: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+DATE: use today's date.
+
+EFFICIENCY RULES (apply throughout):
+- Keep narration to ONE short line per step (e.g. "Step 2: searching 7 sectors..."). No long explanations.
+- Run independent searches/tool calls in parallel batches whenever possible.
+- Never re-read a file you have already read.
+
+========================================
+STEP 1 — LOAD BLOCKLIST
+========================================
+
+Read ONE file: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete\no-contact-list.txt
+It contains every previously contacted/rejected business name and email (pre-built, one per line). Any candidate matching an entry (case-insensitive) is skipped. Do NOT read the CSV files for deduplication — this list already covers them.
+
+========================================
+STEP 2 — FIND 12 CANDIDATE LEADS
+========================================
+
+Find 12 candidates (2 spare, so validation rejections need no re-search).
+Run ALL 7 sector searches IN PARALLEL (one batch). Take 1-2 leads per group, max 3 per group:
+
+A. Pet: site:facebook.com "dog grooming" OR "dog walking" OR "pet sitting" OR "dog boarding" UK "@gmail.com" OR "@hotmail.com"
+B. Domestic/garden: site:facebook.com "house cleaning" OR "domestic cleaner" OR "garden maintenance" OR "landscaping" UK "@gmail.com" OR "@hotmail.com"
+C. Vehicles: site:facebook.com "mobile car valeting" OR "car detailing" UK "@gmail.com" OR "@hotmail.com"
+D. Trades: site:facebook.com "painter decorator" OR "plasterer" OR "fencing contractor" UK "@gmail.com" OR "@hotmail.com"
+E. Hair/beauty: site:facebook.com "beauty salon" OR "nail salon" OR "hairdresser" UK "@gmail.com" OR "@hotmail.com"
+F. Weddings/events: site:facebook.com "wedding photographer" OR "wedding DJ" OR "florist" OR "caterer" OR "wedding decorator" UK "@gmail.com" OR "@hotmail.com"
+G. Education: site:facebook.com "private tutor" OR "driving school" OR "driving instructor" OR "training provider" UK "@gmail.com" OR "@hotmail.com"
+
+If a group returns nothing usable, run ONE follow-up variant query for that group only.
+
+LEAD FILTER — a candidate passes only if it meets at least 5 of these 7:
+  1. Visible email. Personal preferred (gmail, hotmail, yahoo, outlook, icloud, ntlworld, talktalk, live.co.uk, aol, btinternet, virginmedia). Generic business email (info@/contact@) acceptable ONLY if no personal email exists AND no modern website.
+  2. No website, broken website, or clearly outdated (pre-2021) website. Facebook-only / directory-only counts.
+  3. Active presence: Google Business Profile, Facebook/Instagram with posts in last 6 months, or directory listing.
+  4. Recent activity: reviews or posts within 12 months.
+  5. Serves a specific named town/area (local, not vague national).
+  6. Service people commonly search and compare online.
+  7. Limited company or LLP when visible (sole traders fine; reject hobby operations).
+
+HARD REJECT regardless: matches blocklist · marked closed · unverifiable (zero results) · modern functional website (Wix/Squarespace/Shopify 2022+, professional custom site) · email domain implies a working website (info@businessname.co.uk).
+
+========================================
+STEP 3 — VALIDATE + ENRICH (ONE SEARCH PER LEAD)
+========================================
+
+For each of the 12 candidates run exactly ONE search, all in parallel:
+  "[Business Name] [Location] reviews phone"
+
+From that single result set confirm: findable, active (not closed), no modern site, email still valid — AND extract in the same pass: phone, service area, social URL, review rating.
+
+Drop any lead that fails. Keep the best 10 of the survivors (if fewer than 10 survive, run replacement searches only for the shortfall).
+
+SCORE each surviving lead 1-10:
+  +2 no website at all · +1 outdated/broken site only
+  +2 pet/beauty/hair/weddings · +1 cleaning/trades/vehicles/education
+  +1 has Google reviews · +1 active socials · +1 Ltd/LLP · +1 named multi-town service area
+Prefer the 10 highest scores.
+
+========================================
+STEP 4 — WRITE 10 COLD EMAILS
+========================================
+
+SUBJECT: 2-4 words, all lowercase, location + service ("falkirk dog groomers", "leeds plasterers"). Never "website opportunity", "quick question", "business growth".
+
+STRUCTURE (each email):
+1. OPENING (1-2 sentences) — lead with THEIR missed-customer problem, not Echo Webworks. Name location + service. Sector angles:
+   groomer/salon/beauty: customers check prices, photos, availability before booking
+   cleaner: customers want coverage area + trust signals before calling
+   wedding photographer/DJ/florist/caterer/decorator: couples compare portfolios online before contacting anyone
+   plasterer/painter/fencer/landscaper: homeowners want previous work + coverage before requesting quotes
+   valeter/detailer: customers compare services and prices online
+   tutor: parents search subject, area, qualifications
+   driving school: learners compare prices, pass rates, instructor profiles
+2. SOLUTION (1-2 sentences) — what Echo Webworks would build (sector-appropriate pages). Weave in exactly ONE of: fixed price / no monthly platform fees / they own it outright / live in 2-4 weeks. No jargon (no SEO, digital presence, conversion, responsive design). Never mention actual prices.
+3. STATISTIC — exact wording: "BrightLocal's 2026 survey found that 54% of consumers visit a business's website after reading positive reviews." + one sentence connecting it to them.
+4. CTA — exactly one question: "Worth a quick chat?" / "Would this be useful?" / "Interested?" / "Would you be open to hearing a few ideas?" / "Want to see a couple of examples of sites I've built for similar businesses?" (use the examples CTA for visual sectors: weddings, photography, beauty). Never request a meeting/time.
+5. SIGNATURE (exact):
+Myles
+Echo Webworks
+echowebworks.co.uk
+echowebworkscompany@gmail.com
+
+RULES: 105-135 words incl. signature (max 150) · no bullets · no exclamation marks · conversational peer-to-peer · every email's opening, angle and CTA must differ from the others in this run.
+BANNED: "I hope this email finds you well" · "I came across your profile" · "I noticed you don't have a website" · "In today's digital age" · "elevate your online presence" · "take your business to the next level" · "game-changer" · "revolutionize" · "unlock your potential" · fake urgency.
+
+Silent quality check per email: opens with their problem? location + service named? exact stat? one CTA? under 150 words? human-sounding? signature correct? distinct from the other nine? Fix before continuing.
+
+========================================
+STEP 5 — CREATE 10 GMAIL DRAFTS
+========================================
+
+Tool: mcp__1a5f276e-cd62-40f5-b2a7-acd8b020b75a__create_draft
+Two parallel batches of 5. Each: to=[email], subject=[subject], body=[full email incl. signature]. Confirm all 10 created.
+
+========================================
+STEP 6 — UPDATE TRACKING FILES
+========================================
+
+APPEND to C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete\outreach_log.csv (no quotes, match existing format):
+  [12-char hex id],[business name],[email],[today],,,draft_created
+
+APPEND to C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete\leads.csv (ALL fields quoted, header order):
+  "lead_id","business_name","location","sector","business_type","phone","public_email","email_source_url","main_online_presence_url","website_status","lead_score","suitable_website_feature","research_date","status","notes"
+Values: sector = pet|cleaning|vehicles|trades|hair|beauty|weddings|education|other · business_type = "Limited company" if confirmed else "Sole trader" · phone from Step 3 or "" · website_status = "No website found"|"Outdated site found"|"Facebook only"|"Broken website" · lead_score from Step 3 · suitable_website_feature by sector (pet: "services + pricing + booking + coverage area" / cleaning: "services + coverage area + trust signals + contact" / vehicles: "services + pricing + before-after gallery + contact" / trades: "services + coverage area + portfolio + quote form" / hair & beauty: "services + pricing + gallery + booking" / weddings: "portfolio + packages + pricing + contact" / education: "subjects + pricing + qualifications + contact") · status = OUTREACHED · notes = "Draft created"
+
+Use single efficient append operations (one write per file, all rows at once).
+
+========================================
+STEP 7 — SUMMARY
+========================================
+
+Print compact summary:
+  Leads found / validated / drafts created (numbers)
+  Table: Business | Email | Sector | Score | Website status
+  Rejected: name — reason (one line each)
+End with: "Done. Check your Gmail Drafts folder to review and send."

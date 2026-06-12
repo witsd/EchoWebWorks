@@ -1,0 +1,435 @@
+Timestamp: 11/06/2026  0:34:36.18 
+Starting email automation routine... 
+Checking dependencies 
+Node.js found 
+Installing npm dependencies 
+
+added 30 packages, and audited 31 packages in 2s
+
+4 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Running deduplication check 
+
+> echo-webworks-lead-generation@3.0.0 email-routine
+> node email-routine-master.js
+
+[33m
+🔧 OPTIMIZED EMAIL ROUTINE - MASTER SCRIPT[0m
+[33m════════════════════════════════════════════════════════════════════════════════[0m
+[34m
+1️⃣  Loading existing data for deduplication...[0m
+[0m   ✅ Contacted: 2[0m
+[0m   ✅ Rejected: 102[0m
+[0m   ✅ Do not contact: 0[0m
+[34m
+2️⃣  Loading and deduplicating leads...[0m
+[36m
+📋 Deduplication Results:[0m
+[0m   Total in file: 13[0m
+[0m   Already processed: 3 (skipped)[0m
+[32m   New leads to process: 10[0m
+[34m
+3️⃣  Leads to process:[0m
+[34m
+📊 Leads Ready for Email Discovery:
+[0m
+[36m[1/10] Noble Service and Maintenance (Plumbing & Electrical)[0m
+[0m   Location: 2 Burnwood DriveOpen 24 hours[0m
+[0m   Sector: plumbing[0m
+[36m[2/10] Denham Plumbing and Heating Ltd[0m
+[0m   Location: 5 pm[0m
+[0m   Sector: plumbing[0m
+[36m[3/10] Hair Inspirations[0m
+[0m   Location: 2 David's Loan, Bainsford, Falkirk FK2 7RG[0m
+[0m   Sector: hairdressing[0m
+[36m[4/10] Smiths Hair & Beauty[0m
+[0m   Location: 41 Main St, Bonnybridge FK4 1AF[0m
+[0m   Sector: hairdressing[0m
+[36m[5/10] The Hair Studio[0m
+[0m   Location: 108 Main St, Larbert FK5 3AS[0m
+[0m   Sector: hairdressing[0m
+[36m[6/10] Sanctuary Hair and Beauty[0m
+[0m   Location: 4 Fleming Court, Denny FK6 5HB[0m
+[0m   Sector: hairdressing[0m
+[36m[7/10] Maid For It - Professional Cleaning Services[0m
+[0m   Location: 20 The Wynd, Cumbernauld, Glasgow G67 2SU[0m
+[0m   Sector: cleaning[0m
+[36m[8/10] Wellstand Garage (MacFarlane Motors)[0m
+[0m   Location: 151 Stirling St, Denny FK6 6JD[0m
+[0m   Sector: automotive[0m
+[36m[9/10] Penman's Garage[0m
+[0m   Location: 9 Seabegs Rd, Bonnybridge FK4 2BP[0m
+[0m   Sector: automotive[0m
+[36m[10/10] Bow Wow Scotland Dog Grooming Studio[0m
+[0m   Location: [0m
+[0m   Sector: dog grooming[0m
+[34m
+4️⃣  Preparing for email discovery...[0m
+
+================================================================================
+🚀 OPTIMIZATION SUMMARY
+================================================================================
+
+AUTOMATION FLOW (Optimized):
+
+  Step 1: Deduplication
+    ✅ Skip already contacted (0)
+    ✅ Skip rejected leads
+    ✅ Skip do_not_contact
+    ✅ Process only: 10 NEW leads
+
+  Step 2: Email Discovery (Parallel WebSearch)
+    → Search all 10 leads simultaneously
+    → Extract emails with regex
+    → Verify no websites
+
+  Step 3: Batch Email Generation
+    → Generate emails in batches of 2-3
+    → Use marketing-skills:cold-email
+    → ~2 min total (vs 4 min sequential)
+
+  Step 4: Create Gmail Drafts
+    → Auto-save to your Gmail drafts
+    → Ready for review + send
+
+  Step 5: Update CSVs
+    → Batch update all tracking files
+    → Log results automatically
+
+EXPECTED RESULTS (from 10 leads):
+  • Emails found: 3-4 (25-35%)
+  • Gmail drafts: 2-2 (15-20%)
+  • Manual review: 7-8 (65-75%)
+
+TIME ESTIMATE:
+  • Email discovery: 2-3 min
+  • Email generation: 2-3 min
+  • Gmail drafts: 1 min
+  • CSV updates: <1 min
+  ─────────────────────
+  • TOTAL: 5-7 min (30% faster than v2)
+
+================================================================================
+
+TO RUN COMPLETE AUTOMATION:
+
+Paste this into Claude Code:
+
+  I'm ready to execute the optimized email routine. Process all new leads:
+  1. Search for emails (WebSearch - parallel)
+  2. Verify no websites
+  3. Generate personalized cold emails (batch generation)
+  4. Create Gmail drafts
+  5. Update CSVs
+
+  Start now.
+
+================================================================================
+
+[0m✅ Search queries saved to: email-search-queries.json
+[0m
+[32m🎯 NEXT STEP: Paste the command above into Claude Code to execute the routine.
+[0m
+Executing: email search + generation + Gmail drafts 
+
+> echo-webworks-lead-generation@3.0.0 email-routine-full
+> node email-routine-orchestrate.js && node email-routine-master.js
+
+
+🔧 Echo Webworks Email Routine Orchestration
+==========================================
+
+
+📋 Manual Review Leads Loaded: 13
+
+================================================================================
+LEADS READY FOR EMAIL DISCOVERY
+================================================================================
+
+[1/13] Noble Service and Maintenance (Plumbing & Electrical)
+   Location: 2 Burnwood DriveOpen 24 hours
+   Sector: plumbing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[2/13] Denham Plumbing and Heating Ltd
+   Location: 5 pm
+   Sector: plumbing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[3/13] Hair Inspirations
+   Location: 2 David's Loan, Bainsford, Falkirk FK2 7RG
+   Sector: hairdressing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[4/13] Smiths Hair & Beauty
+   Location: 41 Main St, Bonnybridge FK4 1AF
+   Sector: hairdressing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[5/13] The Hair Studio
+   Location: 108 Main St, Larbert FK5 3AS
+   Sector: hairdressing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[6/13] Sanctuary Hair and Beauty
+   Location: 4 Fleming Court, Denny FK6 5HB
+   Sector: hairdressing
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[7/13] Maid For It - Professional Cleaning Services
+   Location: 20 The Wynd, Cumbernauld, Glasgow G67 2SU
+   Sector: cleaning
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[8/13] Headswood Garage
+   Location: Whitehill Farm, Denny FK6 5NA
+   Sector: automotive
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[9/13] Wellstand Garage (MacFarlane Motors)
+   Location: 151 Stirling St, Denny FK6 6JD
+   Sector: automotive
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[10/13] Penman's Garage
+   Location: 9 Seabegs Rd, Bonnybridge FK4 2BP
+   Sector: automotive
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[11/13] Bow Wow Scotland Dog Grooming Studio
+   Location: 
+   Sector: dog grooming
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[12/13] Snoopies dog grooming and home boarding falkirk
+   Location: 107 A883Closed
+   Sector: dog grooming
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+[13/13] The Groom Studio Cumbernauld
+   Location: Hornbeam RdCloses soon
+   Sector: dog grooming
+   Score: 6/10
+   Reason for review: No verified generic business email
+
+================================================================================
+🚀 AUTOMATED EMAIL ROUTINE - READY TO EXECUTE
+================================================================================
+
+TO RUN THE COMPLETE AUTOMATED PROCESS:
+
+Copy and paste this command into Claude Code:
+
+  /run-email-routine-complete
+
+This will:
+  1. Search for business emails (WebSearch)
+  2. Verify no website exists (Google search + validation)
+  3. Generate cold email drafts
+  4. Create Gmail drafts automatically
+  5. Update all CSVs with results
+
+LEADS TO PROCESS: 13
+- 4 hairdressing
+- 3 automotive
+- 3 dog grooming
+- 2 plumbing
+- 1 cleaning
+
+EXPECTED RESULTS (based on data quality):
+- Emails found: 20-40%
+- Gmail drafts created: 3-6
+- Leads remaining in manual review: 8-10
+
+================================================================================
+
+✅ Leads saved to: leads-to-process.json
+
+[33m
+🔧 OPTIMIZED EMAIL ROUTINE - MASTER SCRIPT[0m
+[33m════════════════════════════════════════════════════════════════════════════════[0m
+[34m
+1️⃣  Loading existing data for deduplication...[0m
+[0m   ✅ Contacted: 2[0m
+[0m   ✅ Rejected: 102[0m
+[0m   ✅ Do not contact: 0[0m
+[34m
+2️⃣  Loading and deduplicating leads...[0m
+[36m
+📋 Deduplication Results:[0m
+[0m   Total in file: 13[0m
+[0m   Already processed: 3 (skipped)[0m
+[32m   New leads to process: 10[0m
+[34m
+3️⃣  Leads to process:[0m
+[34m
+📊 Leads Ready for Email Discovery:
+[0m
+[36m[1/10] Noble Service and Maintenance (Plumbing & Electrical)[0m
+[0m   Location: 2 Burnwood DriveOpen 24 hours[0m
+[0m   Sector: plumbing[0m
+[36m[2/10] Denham Plumbing and Heating Ltd[0m
+[0m   Location: 5 pm[0m
+[0m   Sector: plumbing[0m
+[36m[3/10] Hair Inspirations[0m
+[0m   Location: 2 David's Loan, Bainsford, Falkirk FK2 7RG[0m
+[0m   Sector: hairdressing[0m
+[36m[4/10] Smiths Hair & Beauty[0m
+[0m   Location: 41 Main St, Bonnybridge FK4 1AF[0m
+[0m   Sector: hairdressing[0m
+[36m[5/10] The Hair Studio[0m
+[0m   Location: 108 Main St, Larbert FK5 3AS[0m
+[0m   Sector: hairdressing[0m
+[36m[6/10] Sanctuary Hair and Beauty[0m
+[0m   Location: 4 Fleming Court, Denny FK6 5HB[0m
+[0m   Sector: hairdressing[0m
+[36m[7/10] Maid For It - Professional Cleaning Services[0m
+[0m   Location: 20 The Wynd, Cumbernauld, Glasgow G67 2SU[0m
+[0m   Sector: cleaning[0m
+[36m[8/10] Wellstand Garage (MacFarlane Motors)[0m
+[0m   Location: 151 Stirling St, Denny FK6 6JD[0m
+[0m   Sector: automotive[0m
+[36m[9/10] Penman's Garage[0m
+[0m   Location: 9 Seabegs Rd, Bonnybridge FK4 2BP[0m
+[0m   Sector: automotive[0m
+[36m[10/10] Bow Wow Scotland Dog Grooming Studio[0m
+[0m   Location: [0m
+[0m   Sector: dog grooming[0m
+[34m
+4️⃣  Preparing for email discovery...[0m
+
+================================================================================
+🚀 OPTIMIZATION SUMMARY
+================================================================================
+
+AUTOMATION FLOW (Optimized):
+
+  Step 1: Deduplication
+    ✅ Skip already contacted (0)
+    ✅ Skip rejected leads
+    ✅ Skip do_not_contact
+    ✅ Process only: 10 NEW leads
+
+  Step 2: Email Discovery (Parallel WebSearch)
+    → Search all 10 leads simultaneously
+    → Extract emails with regex
+    → Verify no websites
+
+  Step 3: Batch Email Generation
+    → Generate emails in batches of 2-3
+    → Use marketing-skills:cold-email
+    → ~2 min total (vs 4 min sequential)
+
+  Step 4: Create Gmail Drafts
+    → Auto-save to your Gmail drafts
+    → Ready for review + send
+
+  Step 5: Update CSVs
+    → Batch update all tracking files
+    → Log results automatically
+
+EXPECTED RESULTS (from 10 leads):
+  • Emails found: 3-4 (25-35%)
+  • Gmail drafts: 2-2 (15-20%)
+  • Manual review: 7-8 (65-75%)
+
+TIME ESTIMATE:
+  • Email discovery: 2-3 min
+  • Email generation: 2-3 min
+  • Gmail drafts: 1 min
+  • CSV updates: <1 min
+  ─────────────────────
+  • TOTAL: 5-7 min (30% faster than v2)
+
+================================================================================
+
+TO RUN COMPLETE AUTOMATION:
+
+Paste this into Claude Code:
+
+  I'm ready to execute the optimized email routine. Process all new leads:
+  1. Search for emails (WebSearch - parallel)
+  2. Verify no websites
+  3. Generate personalized cold emails (batch generation)
+  4. Create Gmail drafts
+  5. Update CSVs
+
+  Start now.
+
+================================================================================
+
+[0m✅ Search queries saved to: email-search-queries.json
+[0m
+[32m🎯 NEXT STEP: Paste the command above into Claude Code to execute the routine.
+[0m
+Timestamp: 11/06/2026  0:34:39.56 
+Routine complete 
+ 
+
+Timestamp: 11/06/2026  9:00:00.80
+Project directory: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+Starting email automation routine...
+Node.js v24.15.0 found 
+Dependencies verified 
+Deduplication complete 
+Routine complete - no new leads to process
+
+Timestamp: 11/06/2026  9:01:35.54
+Project directory: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+Starting email automation routine...
+Node.js v24.15.0 found 
+Dependencies verified 
+Deduplication complete 
+Routine complete - no new leads to process
+
+Timestamp: 11/06/2026  9:06:47.92
+Project directory: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+Starting email automation routine...
+Routine complete - 11/06/2026  9:06:48.65
+
+Timestamp: 11/06/2026  9:17:38.31
+Project directory: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+Starting email automation routine...
+Routine complete - 11/06/2026  9:17:39.03
+
+Timestamp: 11/06/2026  9:22:03.74
+Project directory: C:\Users\myles\OneDrive\Documents\EchoWebWorks\email-automation-complete
+Starting email automation routine...
+Routine complete - 11/06/2026  9:22:04.48
+[11/06/2026 10:25:51.54] Starting automated campaign 
+[11/06/2026 10:26:03.68] Starting automated campaign 
+[11/06/2026 10:28:23.06] Starting automated campaign 
+[11/06/2026 10:28:25.66] Campaign finished with errors 
+[11/06/2026 10:31:54.74] Starting automated campaign 
+[11/06/2026 10:31:57.11] Campaign finished with errors 
+[11/06/2026 10:36:12.43] Starting automated campaign 
+[11/06/2026 10:39:19.10] Campaign finished with errors 
+[11/06/2026 15:58:56.05] Starting automated campaign 
+[11/06/2026 16:35:57.38] Starting automated campaign 
+[11/06/2026 16:51:57.44] Starting automated campaign 
+[11/06/2026 16:52:03.14] Starting automated campaign 
+[11/06/2026 16:52:33.17] Starting automated campaign 
+[11/06/2026 16:56:31.20] Starting automated campaign 
+[11/06/2026 16:58:55.43] Campaign finished successfully 
+[11/06/2026 17:00:03.95] Starting automated campaign 
+[11/06/2026 17:00:06.76] Campaign finished successfully 
+[11/06/2026 21:33:59.87] Starting automated campaign 
+[11/06/2026 21:44:05.52] Campaign finished with errors 
+[11/06/2026 22:01:58.77] Starting automated campaign 
+[11/06/2026 22:13:38.62] Campaign finished successfully 
+[12/06/2026 12:34:17.96] Starting automated campaign 
+[12/06/2026 12:42:28.72] Campaign finished with errors 

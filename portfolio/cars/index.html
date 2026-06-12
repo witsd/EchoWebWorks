@@ -1,576 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Signature Detailing</title>
-  
+  <title>The Signature Detailing — Mobile Car Detailing, Delivered to You</title>
+  <meta name="description" content="Premium mobile car detailing delivered to your door. Interior, exterior, and complete packages from $149. Rated 5 stars. Book online in minutes." />
+  <meta name="theme-color" content="#0b0b0c" />
+
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-60REYZQ7SF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-60REYZQ7SF');
-</script>
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-60REYZQ7SF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-60REYZQ7SF');
+  </script>
 
   <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
-
-  <!-- Font Awesome (Icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-  <!-- AOS (Animate On Scroll) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav id="navv" data-aos="fade-down">
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn" aria-label="Open Menu">
-      <i class="fas fa-bars"></i>
-    </label>
+  <a class="skip-link" href="#home">Skip to main content</a>
 
-    <img class="logoo" data-aos="fade-down" src="./Images/Generated_image_3__1__1-removebg-preview.png"
-      alt="The Signature Detailing Logo" />
+  <!-- NAV -->
+  <header class="site-nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-rule"></span>
+        THE SIGNATURE<em>DETAILING</em>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://the-signature-detailing.setmore.com" target="_blank" rel="noopener" class="btn-gold">Book now</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <ul id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#our-services">Services</a></li>
-      <li><a href="./our-work.html">Our Work</a></li>
-      <li><a href="./about-us.html">About</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-
-      <a href="https://www.facebook.com/thesignaturedetailing" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook social-iconn" id="facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/thesignature_detailing" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram social-iconn insta" id="instagram"></i>
-      </a>
-      <a href="https://wa.me/15483148589" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp social-iconn insta" id="fa-whatsapp"></i>
-      </a>
-      <a href="https://the-signature-detailing.setmore.com" target="_blank" class="book-noww">
-        Book now
-      </a>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
+  <main>
+  <!-- HERO -->
   <section id="home" class="hero">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline aria-hidden="true">
       <source src="./Images/Hero-Vedio.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
-
-    <!-- Subtle vignette + parallax overlay -->
-    <div class="overlay"></div>
-
-    <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-      <h1>Mobile Detailing Delivered Right to You, Anytime, Anywhere.</h1>
-      <p>Experience quality car care tailored to fit your schedule.</p>
-      <a href="https://the-signature-detailing.setmore.com" target="_blank" class="book-now">
-        Book Now
-      </a>
-
-      <div class="star" data-aos="zoom-in" data-aos-delay="450">
-        <!-- Stars -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1c40f">
-          <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1c40f">
-          <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1c40f">
-          <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1c40f">
-          <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f1c40f">
-          <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-        </svg>
-
-        <div class="rating-text">
-          <p><span>Rated 5 stars</span> by our customers.</p>
-        </div>
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Mobile detailing · We come to you</p>
+      <h1>Showroom finish.<br><em>Delivered to your door.</em></h1>
+      <p class="hero-sub">Premium car care on your schedule — at your home, office, anywhere. Rated five stars by our customers.</p>
+      <div class="hero-actions">
+        <a href="https://the-signature-detailing.setmore.com" target="_blank" rel="noopener" class="btn-gold btn-lg">Book your detail</a>
+        <a href="#services" class="btn-line btn-lg">View packages</a>
       </div>
+      <div class="hero-rating" aria-label="Rated 5 stars by our customers">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>Rated 5 stars by our customers</span>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <span>Interior</span><i>—</i><span>Exterior</span><i>—</i><span>Ceramic coating</span><i>—</i><span>Paint correction</span><i>—</i><span>We come to you</span>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section id="how-it-workss">
-    <div class="how-it-works">
-      <div class="how-it-works-header" data-aos="fade-up">
-        <h2>How It Works</h2>
-      </div>
-
-      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="step-number">1</div>
-        <i class="fas fa-laptop"></i>
-        <h3>Book Online</h3>
-        <p>Select your preferred service package and schedule an appointment at your convenience through our easy online
-          booking system.</p>
-      </div>
-
-      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="step-number">2</div>
-        <i class="fas fa-truck"></i>
-        <h3>We Come to You</h3>
-        <p>Our professional detailers arrive at your home or office at the scheduled time with all necessary equipment
-          and products.</p>
-      </div>
-
-      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="step-number">3</div>
-        <i class="fas fa-couch"></i>
-        <h3>Relax While We Detail</h3>
-        <p>Sit back and relax while our expert team transforms your vehicle using premium products and meticulous
-          techniques.</p>
-      </div>
-
-      <div class="step-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="step-number">4</div>
-        <i class="fas fa-car"></i>
-        <h3>Enjoy Your Car</h3>
-        <p>Receive your vehicle looking brand new with a showroom shine and enjoy the Signature Detailing experience.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Services -->
-  <section id="our-services" style="scroll-margin-top: 50px;">
-    <div class="services">
-      <div class="our-services-header" data-aos="fade-up">
-        <h2>Our Services</h2>
-      </div>
-
-      <div class="d-flex flex-wrap services-cards">
-        <!-- Card 1 -->
-        <div class="card cards-modify" data-aos="fade-right" data-aos-delay="100">
-          <img src="./Images/Gellery1.jfif" class="card-img-top img-setting" alt="Luxury Interior Detail"
-            loading="lazy" />
-          <div class="card-body">
-            <h4 class="card-title">Luxury Interior Detail</h4>
-            <h5>From $149</h5>
-            <p class="card-text">
-              Our <strong>Luxury Interior Detail</strong> thoroughly cleans and sanitises your vehicle's interior,
-              getting rid of stubborn stains and any embedded dirt and grime, leaving your interior spotless and fresh.
-            </p>
-
-            <div class="features">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Steam Cleaning</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Leather Conditioning</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Fabric Protection</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Odor Elimination</p>
-            </div>
-          </div>
-          <a href="https://the-signature-detailing.setmore.com/#services" class="book-nowww">Book Now</a>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card cards-modify" data-aos="fade-up" data-aos-delay="150">
-          <img src="./Images/Gallery7.jfif" class="card-img-top img-setting" alt="Premium Exterior Detail"
-            loading="lazy" />
-          <div class="card-body">
-            <h4 class="card-title">Premium Exterior Detail</h4>
-            <h5>From $199</h5>
-            <p class="card-text">
-              Our <strong>Premium Exterior Detail</strong> provides a safe, scratch-free clean that thoroughly
-              rejuvenates your vehicle's wheels, body, and other exterior surfaces, resulting in a glossy finish.
-            </p>
-
-            <div class="features">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Paint Correction</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Ceramic Coating</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Wheel & Tire Detail</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Chrome Polish</p>
-            </div>
-          </div>
-          <a href="https://the-signature-detailing.setmore.com/#services" class="book-nowww">Book Now</a>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card cards-modify" data-aos="fade-left" data-aos-delay="200">
-          <img src="./Images/Gallery2.jfif" class="card-img-top img-setting" alt="Complete Detail Package"
-            loading="lazy" />
-          <div class="card-body">
-            <h4 class="card-title">Complete Detail Package</h4>
-            <h5>From $299</h5>
-            <p class="card-text">
-              If you're looking for a complete refresh, both inside and out, our <strong>Complete Detail
-                Package</strong> is the perfect choice. It combines both our Interior and Exterior Deep Clean services.
-            </p>
-
-            <div class="features">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Everything Included</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Paint Protection</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">Interior Protection</p>
-            </div>
-
-            <div class="featuress">
-              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                fill="#03dd50">
-                <path
-                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z" />
-              </svg>
-              <p class="teext">6-Month Warranty</p>
-            </div>
-          </div>
-          <a href="https://the-signature-detailing.setmore.com/#services" class="book-nowww">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials-section">
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>What Our Customers Say</h2>
-        <p class="section-subtitle">Don't just take our word for it - hear from our satisfied clients</p>
+      <div class="sec-head reveal">
+        <p class="kicker">The process</p>
+        <h2>Four steps to a flawless finish</h2>
       </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="stars">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-          </div>
-          <p class="testimonial-text">The attention to detail was absolutely incredible. My 10-year-old car looks brand
-            new again! The ceramic coating they applied has made maintenance so much easier.</p>
-          <div class="customer-info">
-            <div class="customer-avatar">
-              <img src="./Images/F-150 After2.jfif" alt="Customer Photo" loading="lazy">
-            </div>
-            <div class="customer-details">
-              <h4>Michael Thompson</h4>
-              <p>Ford F-150 Owner</p>
-            </div>
-          </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Book online</h3>
+          <p>Choose your package and pick a time that suits you with our online booking system.</p>
         </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="stars">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-          </div>
-          <p class="testimonial-text">Professional service from start to finish. They took extra care with my car and
-            the paint correction removed all the swirl and scratches marks I thought were permanent.</p>
-          <div class="customer-info">
-            <div class="customer-avatar">
-              <img src="./Images/BMW 5.jpg" alt="Customer Photo" loading="lazy">
-            </div>
-            <div class="customer-details">
-              <h4>Sarah Johnson</h4>
-              <p>BMW Series 5 Owner</p>
-            </div>
-          </div>
+        <div class="step reveal">
+          <span class="step-num">02</span>
+          <h3>We come to you</h3>
+          <p>Our detailers arrive at your home or office with all equipment and premium products.</p>
         </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="stars">
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="25px" fill="#f1c40f">
-              <path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z" />
-            </svg>
-          </div>
-          <p class="testimonial-text">I've tried many detailing services over the years, but none compare to the quality
-            and results I received here. The interior detailing transformed my car's cabin completely.</p>
-          <div class="customer-info">
-            <div class="customer-avatar">
-              <img src="./Images/Mercedes GLC.webp" alt="Customer Photo" loading="lazy">
-            </div>
-            <div class="customer-details">
-              <h4>David Rodriguez</h4>
-              <p>Mercedes GLC-300 Owner</p>
-            </div>
-          </div>
+        <div class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Relax while we detail</h3>
+          <p>Sit back while the team transforms your vehicle with meticulous technique.</p>
         </div>
+        <div class="step reveal">
+          <span class="step-num">04</span>
+          <h3>Enjoy your car</h3>
+          <p>Walk out to a showroom shine — the Signature Detailing experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section sec-raised">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="kicker">Packages</p>
+        <h2>Choose your level of clean</h2>
+      </div>
+      <div class="packages">
+        <article class="package reveal">
+          <img src="./Images/Gellery1.jfif" alt="Luxury interior detailing" loading="lazy" />
+          <div class="package-body">
+            <h3>Luxury Interior Detail</h3>
+            <p class="package-price">From <strong>$149</strong></p>
+            <p class="package-desc">Deep cleans and sanitises your interior — stubborn stains, embedded dirt and grime gone, leaving it spotless and fresh.</p>
+            <ul>
+              <li>Steam cleaning</li>
+              <li>Leather conditioning</li>
+              <li>Fabric protection</li>
+              <li>Odor elimination</li>
+            </ul>
+            <a href="https://the-signature-detailing.setmore.com/#services" target="_blank" rel="noopener" class="btn-line btn-block">Book this package</a>
+          </div>
+        </article>
+        <article class="package package-featured reveal">
+          <span class="package-flag">Complete</span>
+          <img src="./Images/Gallery2.jfif" alt="Complete detail package" loading="lazy" />
+          <div class="package-body">
+            <h3>Complete Detail Package</h3>
+            <p class="package-price">From <strong>$299</strong></p>
+            <p class="package-desc">The full refresh, inside and out — our Interior and Exterior deep-clean services combined into one appointment.</p>
+            <ul>
+              <li>Everything included</li>
+              <li>Paint protection</li>
+              <li>Interior protection</li>
+              <li>6-month warranty</li>
+            </ul>
+            <a href="https://the-signature-detailing.setmore.com/#services" target="_blank" rel="noopener" class="btn-gold btn-block">Book this package</a>
+          </div>
+        </article>
+        <article class="package reveal">
+          <img src="./Images/Gallery7.jfif" alt="Premium exterior detailing" loading="lazy" />
+          <div class="package-body">
+            <h3>Premium Exterior Detail</h3>
+            <p class="package-price">From <strong>$199</strong></p>
+            <p class="package-desc">A safe, scratch-free clean that rejuvenates wheels, bodywork, and exterior surfaces to a deep gloss finish.</p>
+            <ul>
+              <li>Paint correction</li>
+              <li>Ceramic coating</li>
+              <li>Wheel &amp; tire detail</li>
+              <li>Chrome polish</li>
+            </ul>
+            <a href="https://the-signature-detailing.setmore.com/#services" target="_blank" rel="noopener" class="btn-line btn-block">Book this package</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR WORK -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="kicker">Our work</p>
+        <h2>Before &amp; after — the proof</h2>
+      </div>
+      <div class="work-grid">
+        <figure class="work-pair reveal">
+          <div class="work-imgs">
+            <div class="work-img"><img src="./Images/Dodge Journey Before1.jfif" alt="Dodge Journey interior before detailing" loading="lazy" /><span>Before</span></div>
+            <div class="work-img work-after"><img src="./Images/Dodge Journey After1.jfif" alt="Dodge Journey interior after detailing" loading="lazy" /><span>After</span></div>
+          </div>
+          <figcaption>Dodge Journey — Luxury Interior Detail</figcaption>
+        </figure>
+        <figure class="work-pair reveal">
+          <div class="work-imgs">
+            <div class="work-img"><img src="./Images/F-150 Before1.jfif" alt="Ford F-150 interior before detailing" loading="lazy" /><span>Before</span></div>
+            <div class="work-img work-after"><img src="./Images/F-150 After1.jfif" alt="Ford F-150 interior after detailing" loading="lazy" /><span>After</span></div>
+          </div>
+          <figcaption>Ford F-150 — Complete Detail Package</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-strip reveal">
+        <img src="./Images/Gallery3.jfif" alt="Detailing result" loading="lazy" />
+        <img src="./Images/Gallery4.jfif" alt="Detailing result" loading="lazy" />
+        <img src="./Images/Gallery5.jpg" alt="Detailing result" loading="lazy" />
+        <img src="./Images/BMW 5.jpg" alt="BMW 5 series after detailing" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section sec-raised">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="kicker">Reviews</p>
+        <h2>What our customers say</h2>
+      </div>
+      <div class="reviews">
+        <blockquote class="review reveal">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>The attention to detail was absolutely incredible. My 10-year-old car looks brand new again. The ceramic coating has made maintenance so much easier.</p>
+          <footer><strong>Michael Thompson</strong><span>Ford F-150 owner</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>Professional from start to finish. The paint correction removed swirls and scratches I thought were permanent.</p>
+          <footer><strong>Sarah Johnson</strong><span>BMW 5 Series owner</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>I've tried many detailing services over the years — none compare. The interior detail transformed my cabin completely.</p>
+          <footer><strong>David Rodriguez</strong><span>Mercedes GLC-300 owner</span></footer>
+        </blockquote>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="faq-sectionn">
-    <div class="container">
-      <div class="faq-header" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Find answers of common questions about our services, process, and policies.</p>
+  <section id="faq" class="section">
+    <div class="container faq-container">
+      <div class="sec-head reveal">
+        <p class="kicker">FAQ</p>
+        <h2>Common questions</h2>
       </div>
-
-      <div class="faq-container" data-aos="fade-up" data-aos-delay="150">
-        <div class="faq-item" data-category="services">
-          <div class="faq-question">
-            What services do you offer?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              We offer a comprehensive range of detailing services including paint correction, ceramic coating, paint
-              protection film, interior detailing, and maintenance packages. Each service is tailored to your vehicle's
-              specific needs to ensure optimal protection and appearance.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="process">
-          <div class="faq-question">
-            How long does the detailing process take?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              The duration depends on the service package and condition of your vehicle. A basic interior detail
-              typically takes 3-4 hours, while a full paint correction and ceramic coating can take 2-3 days. We'll
-              provide you with an accurate timeframe during your consultation.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="pricing">
-          <div class="faq-question">
-            How much does a detailing service cost?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              Pricing varies based on your vehicle's size, condition, and the specific services requested. Our packages
-              start at $150 for basic detailing and go up to $1,500+ for comprehensive paint correction and ceramic
-              coating treatments. Contact us for a personalized quote based on your needs.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="warranty">
-          <div class="faq-question">
-            Do you offer warranties on your services?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              Yes, we stand behind our work with industry-leading warranties. Our ceramic coatings come with a 2-5 year
-              warranty depending on the product selected, and paint protection film includes a 10-year warranty against
-              yellowing, cracking, and peeling. All warranties require proper maintenance as outlined in our care guide.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="services">
-          <div class="faq-question">
-            What is ceramic coating and how does it work?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              Ceramic coating is a liquid polymer applied to the exterior of a vehicle that chemically bonds with the
-              factory paint, creating a layer of protection. It provides superior protection against UV rays, chemical
-              stains, and minor scratches while creating a hydrophobic surface that repels water and makes cleaning
-              easier.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="process">
-          <div class="faq-question">
-            Do I need to make an appointment?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              Yes, we operate by appointment only to ensure we can dedicate the proper time and attention to each
-              vehicle. This allows us to schedule our work efficiently and provide you with the best possible service.
-              You can book an appointment through our website or by calling our studio directly.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item" data-category="pricing">
-          <div class="faq-question">
-            What payment methods do you accept?
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-content">
-              We accept all major credit cards (Visa, MasterCard, American Express, Discover), debit cards, cash, and
-              digital payment methods like Apple Pay and Google Pay. For larger projects, we also offer financing
-              options through our partner lenders.
-            </div>
-          </div>
-        </div>
-
-
+      <div class="faq-list reveal">
+        <details>
+          <summary>What services do you offer?<span aria-hidden="true">+</span></summary>
+          <p>A comprehensive range including paint correction, ceramic coating, paint protection film, interior detailing, and maintenance packages — each tailored to your vehicle's needs.</p>
+        </details>
+        <details>
+          <summary>How long does the detailing process take?<span aria-hidden="true">+</span></summary>
+          <p>A basic interior detail typically takes 3–4 hours; a full paint correction with ceramic coating can take 2–3 days. We confirm an accurate timeframe at booking.</p>
+        </details>
+        <details>
+          <summary>How much does a detailing service cost?<span aria-hidden="true">+</span></summary>
+          <p>Pricing depends on vehicle size, condition, and services. Packages start at $149, with comprehensive correction and coating treatments from $1,500+. Contact us for a personalised quote.</p>
+        </details>
+        <details>
+          <summary>Do you offer warranties?<span aria-hidden="true">+</span></summary>
+          <p>Yes. Ceramic coatings carry a 2–5 year warranty depending on the product, and paint protection film includes a 10-year warranty against yellowing, cracking, and peeling.</p>
+        </details>
+        <details>
+          <summary>What is ceramic coating?<span aria-hidden="true">+</span></summary>
+          <p>A liquid polymer that chemically bonds with your factory paint, protecting against UV, chemical stains, and minor scratches — while creating a hydrophobic, easy-clean surface.</p>
+        </details>
+        <details>
+          <summary>Do I need an appointment?<span aria-hidden="true">+</span></summary>
+          <p>Yes — we work by appointment only so every vehicle gets proper time and attention. Book online or call the studio.</p>
+        </details>
+        <details>
+          <summary>What payment methods do you accept?<span aria-hidden="true">+</span></summary>
+          <p>All major credit and debit cards, cash, Apple Pay, and Google Pay. Financing options are available for larger projects.</p>
+        </details>
       </div>
     </div>
   </section>
 
-
-  <!-- Footer -->
-  <footer class="footer" data-aos="fade-up">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
-        <p>United States</p>
-      </div>
-
-      <div class="footer-section">
-        <h3><i class="fas fa-address-book"></i> Contact</h3>
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.thesignaturedetailing@gmail.com">
-                info.thesignaturedetailing@gmail.com</a></p>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <p><a href="tel:+1 (548) 314 8589">+1 (548) 314 8589</a></p>
-          </div>
+  <!-- ABOUT / CONTACT -->
+  <section id="contact" class="section sec-contact">
+    <div class="container contact-grid">
+      <div class="reveal" id="about">
+        <p class="kicker">Get in touch</p>
+        <h2>Ready for the <em>Signature</em> treatment?</h2>
+        <p class="contact-lede">Book online in minutes, or reach us directly — we'll confirm your appointment and come to you.</p>
+        <div class="contact-rows">
+          <div><span>Email</span><a href="mailto:info.thesignaturedetailing@gmail.com">info.thesignaturedetailing@gmail.com</a></div>
+          <div><span>Phone</span><a href="tel:+15483148589">+1 (548) 314 8589</a></div>
+          <div><span>Hours</span><p>Mon–Fri · 8:00am–7:00pm<br/>Sat–Sun · 9:00am–4:00pm</p></div>
+          <div><span>Area</span><p>Mobile service — United States</p></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/thesignaturedetailing" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/thesignature_detailing" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://wa.me/15483148589" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
-
-      <div class="footer-section last">
-        <h3><i class="fas fa-clock"></i> Hours</h3>
-        <p><b>Monday - Friday:</b> 8:00 AM - 7:00 PM</p>
-        <p><b>Saturday - Sunday:</b> 9:00 AM - 4:00 PM</p>
+      <div class="contact-cta reveal">
+        <h3>Book your detail</h3>
+        <p>Pick a package, pick a time — done in under two minutes.</p>
+        <a href="https://the-signature-detailing.setmore.com" target="_blank" rel="noopener" class="btn-gold btn-lg btn-block">Open booking calendar</a>
+        <span class="contact-cta-note">Appointment only · We come to you</span>
       </div>
     </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="brand brand-footer">THE SIGNATURE<em>DETAILING</em></span>
+      <p>© <span id="year"></span> The Signature Detailing. All rights reserved.</p>
+    </div>
   </footer>
-  <!-- Scripts (Bootstrap + AOS + Main) -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
-
 </html>

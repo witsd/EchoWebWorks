@@ -3,303 +3,226 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Natalia Nails Art Studio — Manicure & Nail Care</title>
-<meta name="description" content="Professional nail art studio offering gel manicures, nail care, and bespoke designs. Book your appointment today." />
-<meta name="theme-color" content="#b87333" />
-<meta property="og:title" content="Natalia Nails Art Studio — Manicure & Nail Care" />
-<meta property="og:description" content="Professional nail art studio offering gel manicures, nail care, and bespoke designs. Book your appointment today." />
+<title>Natalia Nails Art Studio — Boutique Manicure & Nail Art, Lukovit</title>
+<meta name="description" content="A boutique nail atelier in Lukovit. Gel manicures, signature nail art, and one-client-at-a-time care. Tue–Sat, 10:00–19:00." />
+<meta name="theme-color" content="#f7f2ec" />
+<meta property="og:title" content="Natalia Nails Art Studio — Boutique Manicure & Nail Art" />
+<meta property="og:description" content="Gel manicures, signature nail art, and one-client-at-a-time care in a calm boutique studio." />
 <meta property="og:image" content="images/hero.jpg" />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="en_US" />
-<meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="images/nail_site_logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="site-header">
+<header class="site-header" id="top">
   <div class="header-inner">
-    <img src="images/nail_site_logo.png" alt="Natalia Nails Art Studio" class="logo" />
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#how">How to Book</a>
-      <a href="#process">Process</a>
+    <nav class="nav-side nav-left" aria-label="Primary navigation">
       <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="#gallery">Gallery</a>
     </nav>
-    <a href="#contact" class="btn-outline header-cta">Book a visit</a>
-    <button id="menu-toggle" class="menu-btn" aria-controls="mobile-nav" aria-label="Open mobile menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <a href="#top" class="wordmark">Natalia<span>Nail Atelier</span></a>
+    <nav class="nav-side nav-right" aria-label="Secondary navigation">
+      <a href="#about">About</a>
+      <a href="#visit" class="nav-book">Book</a>
+    </nav>
+    <button id="menu-toggle" class="menu-btn" aria-controls="mobile-nav" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
     </button>
   </div>
   <nav id="mobile-nav" class="mobile-nav" aria-hidden="true" aria-label="Mobile navigation">
-    <a href="#how">How to Book</a>
-    <a href="#process">Process</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#visit">Book a visit</a>
   </nav>
 </header>
+
 <main id="main">
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid max-wrap">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">Boutique nail atelier</span>
-      <h1>Modern gel manicures and signature nail art.</h1>
-      <p>Experience a calm studio mood, premium Polish products, and custom looks designed for your style.</p>
+      <p class="label">Boutique nail atelier · Lukovit</p>
+      <h1>Nails, treated as <em>an art form.</em></h1>
+      <p class="hero-sub">Modern gel manicures and hand-painted signature art — one client at a time, in a studio designed for calm.</p>
       <div class="hero-actions">
-        <a href="#services" class="btn-copper">View Services</a>
-        <a href="#contact" class="btn-copper">Book a visit</a>
-      </div>
-      <div class="hero-stat-grid">
-        <div><strong>5+</strong><span>Years experience</span></div>
-        <div><strong>100%</strong><span>Premium gel care</span></div>
-        <div><strong>Fast</strong><span>Same-week booking</span></div>
+        <a href="#visit" class="btn-fill">Book a visit</a>
+        <a href="#services" class="btn-text">View services <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <div class="hero-panel">
-      <div class="hero-card">
-        <img src="images/hero.jpg" alt="Manicure tools flat lay" loading="eager" />
-        <div class="hero-card-text">
-          <span>Signature service</span>
-          <h2>Glow Gel Manicure</h2>
-          <p>Precise shaping, long-lasting shine, and a clean finish every time.</p>
-        </div>
-      </div>
-      <div class="hero-accent"></div>
-    </div>
+    <figure class="hero-figure">
+      <img src="images/hero.jpg" alt="Manicure tools and polish flat lay" loading="eager" />
+      <figcaption><span>№ 01</span> The Glow Gel Manicure — our signature service</figcaption>
+    </figure>
+  </div>
+  <div class="hero-rule wrap">
+    <span>Est. with 5+ years of craft</span>
+    <span>Premium gel systems</span>
+    <span>Same-week booking</span>
   </div>
 </section>
 
-<!-- HOW TO BOOK -->
-<section id="how" class="section section-cream">
-  <div class="max-wrap">
-    <div class="section-head">
-      <span class="eyebrow">Book with ease</span>
-      <h2 class="section-title">How to reserve your nail appointment</h2>
-      <p class="lead">Three easy steps from a design idea to a fresh manicure.</p>
-    </div>
-    <div class="steps-grid">
-      <article class="step-card reveal">
-        <span>1</span>
-        <h3>Share your vision</h3>
-        <p>Describe the colors, finish and details you want, or choose from curated inspiration.</p>
-      </article>
-      <article class="step-card reveal">
-        <span>2</span>
-        <h3>Pick a time</h3>
-        <p>Select a slot that fits your week and enjoy a comfortable, relaxed appointment.</p>
-      </article>
-      <article class="step-card reveal">
-        <span>3</span>
-        <h3>Leave glowing</h3>
-        <p>Walk away with polished, healthy nails and personalized aftercare guidance.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="features" class="section section-light">
-  <div class="max-wrap feature-panel">
-    <div class="feature-copy">
-      <span class="eyebrow">What makes us different</span>
-      <h2 class="section-title">A boutique nail experience</h2>
-      <p class="lead">Natalia combines technical skill with refined style, so every service feels custom and memorable.</p>
-    </div>
-    <div class="feature-cards">
-      <article class="feature-card reveal">
-        <div class="feature-icon">✓</div>
-        <h3>Precision finish</h3>
-        <p>Clean lines, even shaping, and durable gel that stays flawless.</p>
-      </article>
-      <article class="feature-card reveal">
-        <div class="feature-icon">🎨</div>
-        <h3>Signature details</h3>
-        <p>Hand-painted accents, soft gradients, and elegant textures tailored to you.</p>
-      </article>
-      <article class="feature-card reveal">
-        <div class="feature-icon">🌿</div>
-        <h3>Studio calm</h3>
-        <p>Relax in a quiet, clean environment designed for modern self-care.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="process" class="section section-alt">
-  <div class="max-wrap">
-    <div class="section-head">
-      <span class="eyebrow">Inside the service</span>
-      <h2 class="section-title">The Natalia process</h2>
-      <p class="lead">From consultation to polish, each step is crafted for comfort and quality.</p>
-    </div>
-    <div class="process-grid">
-      <article class="process-step reveal">
-        <span>01</span>
-        <h3>Consultation</h3>
-        <p>We choose the perfect shade, finish, and style for your nails.</p>
-      </article>
-      <article class="process-step reveal">
-        <span>02</span>
-        <h3>Gentle prep</h3>
-        <p>Soft cuticle care, shaping and cleansing create a strong base.</p>
-      </article>
-      <article class="process-step reveal">
-        <span>03</span>
-        <h3>Expert polish</h3>
-        <p>Premium gel is applied with precision, then cured for a long-lasting shine.</p>
-      </article>
-      <article class="process-step reveal">
-        <span>04</span>
-        <h3>Aftercare</h3>
-        <p>Receive tips and care suggestions so your nails stay beautiful longer.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="section section-cream">
-  <div class="max-wrap">
-    <div class="section-head">
-      <span class="eyebrow">Inspiration</span>
-      <h2 class="section-title">Gallery of finished looks</h2>
-      <p class="lead">Real styles created in the studio, from understated polish to detailed art.</p>
-    </div>
-    <div class="gallery-grid reveal">
-      <img src="images/svc1.jpg" alt="Classic manicure example" loading="lazy" />
-      <img src="images/svc2.jpg" alt="Gel polish example" loading="lazy" />
-      <img src="images/svc3.jpg" alt="Color change inspiration" loading="lazy" />
-      <img src="images/svc4.jpg" alt="Nail art design inspiration" loading="lazy" />
-    </div>
-  </div>
-</section>
-
+<!-- SERVICES -->
 <section id="services" class="section">
-  <div class="max-wrap">
-    <div class="section-head">
-      <span class="eyebrow">Offerings</span>
-      <h2 class="section-title">Services & pricing</h2>
-      <p class="lead">Choose from classic manicure care, gel polish updates, and custom art sessions.</p>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="label">I.&nbsp;&nbsp;Services &amp; pricing</p>
+      <h2>The service menu</h2>
     </div>
-    <div class="services-grid" id="services-grid"></div>
-  </div>
-</section>
-
-<section id="testimonials" class="section section-light">
-  <div class="max-wrap testimonials-panel">
-    <div class="testimonial-main reveal">
-      <div class="testimonial-header">
-        <span class="eyebrow">Client feedback</span>
-        <h2 class="section-title">What they say</h2>
-      </div>
-      <blockquote id="testimonial-quote">"Natalia created the most elegant nails I have ever had. Every visit feels calm, precise, and polished to last."</blockquote>
-      <p class="testimonial-author" id="testimonial-author">— Maria, Lukovit</p>
-      <div class="testimonial-controls">
-        <button type="button" id="testimonial-prev" aria-label="Previous testimonial">‹</button>
-        <button type="button" id="testimonial-next" aria-label="Next testimonial">›</button>
-      </div>
-    </div>
-    <div class="testimonial-list">
-      <article class="testimonial-mini reveal">
-        <p>"The details are incredible, and the result lasted even longer than expected."</p>
-        <span>— Elena, Sofia</span>
-      </article>
-      <article class="testimonial-mini reveal">
-        <p>"A relaxing experience from start to finish, with gentle care and beautiful design."</p>
-        <span>— Viki, Veliko Tarnovo</span>
-      </article>
-      <article class="testimonial-mini reveal">
-        <p>"I felt welcome and well looked after. The shine stayed perfect for weeks."</p>
-        <span>— Nina, Lovech</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section section-accent">
-  <div class="max-wrap about-panel">
-    <div class="about-copy reveal">
-      <span class="eyebrow">Meet Natalia</span>
-      <h2 class="section-title">Passion behind the polish</h2>
-      <p class="lead">Growing up with a love for detail, Natalia turned nail care into a modern beauty ritual.</p>
-      <p>She blends professional craftsmanship with soft, relaxing studio service so every visit feels special.</p>
-      <ul class="about-highlights">
-        <li><strong>Detail focused</strong> - every nail is shaped and polished with precision.</li>
-        <li><strong>Premium products</strong> - gel brands selected for durability and comfort.</li>
-        <li><strong>Personal service</strong> - one client at a time in a calm, hygienic setting.</li>
-      </ul>
-      <a href="#contact" class="btn-copper">Reserve your appointment</a>
-    </div>
-    <div class="about-portrait reveal">
-      <div class="portrait-card">
-        <img src="images/portrait.jpg" alt="Natalia smiling in the nail studio" />
-        <div class="portrait-badge">Precise, warm, artistic</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section section-light">
-  <div class="max-wrap contact-banners">
-    <div class="contact-card reveal">
-      <span class="eyebrow">Contact</span>
-      <h2 class="section-title">Book your next manicure</h2>
-      <p class="lead">Text or call for fast scheduling, or send a request using the form below.</p>
-      <div class="contact-details">
-        <a href="tel:+359877878711" class="phone">+359 877 878 711</a>
-        <div class="info-row">
-          <div>
-            <h3>Studio</h3>
-            <p>st. Ivan Vazov 68<br />Lukovit, 5700</p>
-          </div>
-          <div>
-            <h3>Hours</h3>
-            <p>Tue–Sat: 10:00–19:00<br />Sun &amp; Mon: Closed</p>
-          </div>
+    <div class="menu-list reveal">
+      <article class="menu-row">
+        <div class="menu-row-name">
+          <h3>Classic Manicure</h3>
+          <p>Shaping, cuticle care, and a flawless polish finish.</p>
         </div>
-      </div>
-      <div class="socials contact-socials">
-        <a href="#" aria-label="Facebook">Facebook</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      </div>
+        <span class="menu-row-rule" aria-hidden="true"></span>
+        <span class="menu-row-price">$25</span>
+      </article>
+      <article class="menu-row">
+        <div class="menu-row-name">
+          <h3>Gel Polish</h3>
+          <p>Premium long-lasting gel with a glossy, durable shine.</p>
+        </div>
+        <span class="menu-row-rule" aria-hidden="true"></span>
+        <span class="menu-row-price">$40</span>
+      </article>
+      <article class="menu-row">
+        <div class="menu-row-name">
+          <h3>Color Change</h3>
+          <p>Refresh your look between appointments with a new shade.</p>
+        </div>
+        <span class="menu-row-rule" aria-hidden="true"></span>
+        <span class="menu-row-price">$15</span>
+      </article>
+      <article class="menu-row">
+        <div class="menu-row-name">
+          <h3>Nail Art &amp; Design <span class="menu-tag">Signature</span></h3>
+          <p>Custom hand-painted looks — gradients, textures, fine detail.</p>
+        </div>
+        <span class="menu-row-rule" aria-hidden="true"></span>
+        <span class="menu-row-price">$55</span>
+      </article>
     </div>
+    <p class="menu-note reveal">Every appointment includes consultation, gentle prep, and aftercare guidance.</p>
+  </div>
+</section>
 
-    <div class="contact-form-panel reveal">
-      <form class="contact-form" novalidate>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Service, date, or a question"></textarea>
-        <button type="submit" class="btn-copper">Send request</button>
-        <p class="form-message" aria-live="polite" role="status"></p>
-      </form>
-      <div class="map-panel">
-        <iframe title="map" src="https://www.openstreetmap.org/export/embed.html?bbox=24.16%2C43.20%2C24.20%2C43.22&layer=mapnik"></iframe>
+<!-- GALLERY -->
+<section id="gallery" class="section sec-tinted">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="label">II.&nbsp;&nbsp;Gallery</p>
+      <h2>Recent looks from <em>the studio</em></h2>
+    </div>
+    <div class="gallery reveal">
+      <figure><img src="images/svc1.jpg" alt="Classic manicure example" loading="lazy" /><figcaption>Classic polish</figcaption></figure>
+      <figure class="gallery-tall"><img src="images/svc2.jpg" alt="Gel polish example" loading="lazy" /><figcaption>Gel gloss</figcaption></figure>
+      <figure><img src="images/svc3.jpg" alt="Soft color change look" loading="lazy" /><figcaption>Seasonal shade</figcaption></figure>
+      <figure class="gallery-tall"><img src="images/svc4.jpg" alt="Hand painted nail art" loading="lazy" /><figcaption>Hand-painted art</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section">
+  <div class="wrap process-grid">
+    <div class="sec-head reveal">
+      <p class="label">III.&nbsp;&nbsp;The experience</p>
+      <h2>From idea to <em>finished look</em></h2>
+      <p class="sec-sub">Each visit is unhurried and precise — designed around your hands, not the clock.</p>
+    </div>
+    <ol class="process-list reveal">
+      <li><span>i</span><div><h3>Consultation</h3><p>We choose the shade, finish, and style together.</p></div></li>
+      <li><span>ii</span><div><h3>Gentle prep</h3><p>Cuticle care, shaping, and cleansing build a strong base.</p></div></li>
+      <li><span>iii</span><div><h3>Expert polish</h3><p>Premium gel applied with precision, cured for lasting shine.</p></div></li>
+      <li><span>iv</span><div><h3>Aftercare</h3><p>Personal tips so your nails stay beautiful for longer.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section sec-quote" aria-label="Client testimonials">
+  <div class="wrap">
+    <p class="label centered reveal">Word of mouth</p>
+    <blockquote class="big-quote reveal">
+      <p id="testimonial-quote">“Natalia created the most elegant nails I have ever had. Every visit feels calm, precise, and polished to last.”</p>
+      <cite id="testimonial-author">Maria — Lukovit</cite>
+    </blockquote>
+    <div class="quote-controls reveal">
+      <button type="button" id="testimonial-prev" aria-label="Previous testimonial">←</button>
+      <span class="quote-dots" id="quote-dots" aria-hidden="true"></span>
+      <button type="button" id="testimonial-next" aria-label="Next testimonial">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section sec-tinted">
+  <div class="wrap about-grid">
+    <figure class="about-figure reveal">
+      <img src="images/portrait.jpg" alt="Natalia in her nail studio" loading="lazy" />
+      <figcaption><span>The artist</span> Precise, warm, artistic</figcaption>
+    </figure>
+    <div class="about-copy reveal">
+      <p class="label">IV.&nbsp;&nbsp;Meet Natalia</p>
+      <h2>Passion behind <em>the polish</em></h2>
+      <p>Growing up with a love for detail, Natalia turned nail care into a modern beauty ritual — blending professional craftsmanship with a soft, relaxing studio experience.</p>
+      <ul class="about-list">
+        <li><strong>Detail focused.</strong> Every nail shaped and polished with precision.</li>
+        <li><strong>Premium products.</strong> Gel systems chosen for durability and comfort.</li>
+        <li><strong>One client at a time.</strong> A calm, hygienic, personal setting.</li>
+      </ul>
+      <a href="#visit" class="btn-fill">Reserve your appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT / CONTACT -->
+<section id="visit" class="section">
+  <div class="wrap visit-grid">
+    <div class="visit-info reveal">
+      <p class="label">V.&nbsp;&nbsp;Visit the studio</p>
+      <h2>Book your next <em>manicure</em></h2>
+      <p class="sec-sub">Text or call for the fastest scheduling, or send a request with the form.</p>
+      <a class="visit-phone" href="tel:+359877878711">+359 877 878 711</a>
+      <dl class="visit-details">
+        <div><dt>Studio</dt><dd>st. Ivan Vazov 68<br/>Lukovit 5700</dd></div>
+        <div><dt>Hours</dt><dd>Tue–Sat · 10:00–19:00<br/>Sun &amp; Mon · Closed</dd></div>
+      </dl>
+      <div class="map-frame">
+        <iframe title="Map showing the studio location in Lukovit" src="https://www.openstreetmap.org/export/embed.html?bbox=24.16%2C43.20%2C24.20%2C43.22&layer=mapnik" loading="lazy"></iframe>
       </div>
     </div>
+    <form class="visit-form reveal" novalidate>
+      <h3>Request an appointment</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Service, preferred date, or a question"></textarea>
+      <button type="submit" class="btn-fill btn-block">Send request</button>
+      <p class="form-message" aria-live="polite" role="status"></p>
+    </form>
   </div>
 </section>
 </main>
 
 <footer class="footer">
-  <div class="max-wrap footer-inner">
-    <div class="footer-copy">
-      <p>Carefully curated gel manicures in a calm boutique studio.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#how">Book</a>
+  <div class="wrap footer-inner">
+    <a href="#top" class="wordmark wordmark-footer">Natalia<span>Nail Atelier</span></a>
+    <nav class="footer-nav" aria-label="Footer">
       <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <p class="copyright">© <span id="year"></span> Natalia Nails Art Studio</p>
+      <a href="#visit">Book</a>
+    </nav>
+    <p class="copyright">© <span id="year"></span> Natalia Nails Art Studio · Lukovit</p>
   </div>
 </footer>
 

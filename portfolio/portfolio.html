@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio — Echo Web Works</title>
-    <meta name="description" content="Echo Web Works portfolio page with live previews of completed websites." />
+    <title>Portfolio — Echo Web Works | Custom Websites Built in 2–4 Weeks</title>
+    <meta name="description" content="Six live client builds across beauty, fitness, hospitality, automotive, and home services. Custom-designed, hand-coded, 95+ Lighthouse. Explore every site live." />
+    <meta property="og:title" content="Portfolio — Echo Web Works" />
+    <meta property="og:description" content="Six live client builds across six industries. Custom-designed, hand-coded, shipped in 2–4 weeks. Explore every site live." />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="portfolio.css" />
     <link rel="icon" href="../EWW_symbol_transparent.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Barlow+Condensed:wght@800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="../script.js" defer></script>
 </head>
@@ -23,7 +26,8 @@
                 <span>Echo Web Works</span>
             </a>
             <nav class="nav-links">
-                <a href="../index.html#services">Home</a>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#services">Services</a>
                 <a href="../index.html#why">Why us</a>
                 <a href="../index.html#pricing">Pricing</a>
                 <a href="../index.html#contact">Contact</a>
@@ -35,110 +39,310 @@
         </div>
     </header>
 
-    <main class="section portfolio-page">
+    <!-- Hero -->
+    <section class="pf-hero">
+        <p class="kicker">Portfolio</p>
+        <h1 class="display h2">Real businesses. Real builds. <span class="accent">All live.</span></h1>
+        <p class="pf-sub">Every site below is a complete client build you can open and explore — not a mockup, not a template. Click any project to experience it exactly as their customers do.</p>
+        <div class="pf-stats">
+            <span class="pf-stat"><strong>6</strong> live builds</span>
+            <span class="pf-stat"><strong>6</strong> different industries</span>
+            <span class="pf-stat"><strong>2–4 wks</strong> typical delivery</span>
+            <span class="pf-stat"><strong>95+</strong> Lighthouse scores</span>
+            <span class="pf-stat"><strong>100%</strong> custom-coded</span>
+        </div>
+    </section>
+
+    <main class="section portfolio-page" style="padding-top:0">
         <div class="container">
-            <div class="section-head">
-                <p class="kicker">Portfolio</p>
-                <h1 class="display h2">Browse live previews of recent site builds.</h1>
-                <p class="muted">Each tile below shows a mini version of the website. Click any project to open the full site and explore the complete experience.</p>
+
+            <!-- Filters -->
+            <div class="pf-filters" role="group" aria-label="Filter projects by industry">
+                <button class="pf-filter active" data-filter="all">All projects</button>
+                <button class="pf-filter" data-filter="beauty">Beauty &amp; Salon</button>
+                <button class="pf-filter" data-filter="fitness">Health &amp; Fitness</button>
+                <button class="pf-filter" data-filter="home">Home Services</button>
+                <button class="pf-filter" data-filter="auto">Automotive</button>
+                <button class="pf-filter" data-filter="hospitality">Hospitality</button>
             </div>
 
-            <div class="preview-grid">
-                <article class="portfolio-card">
-                    <a href="aquatica/index.html" class="portfolio-card-link">
-                        <div>    
-                            <h3>Aquatica swim school</h3>
-                            <p>Adult swim school landing page designed for calm trust and effortless conversions.</p>
-                        </div>
-                        <div class="project-screenshot">
-                            <img src="aquatica/images/hero-swim.jpg" alt="Aquatica front page screenshot" />
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
-                        </div>
-                    </a>
-                </article>
+            <!-- Grid -->
+            <div class="pf-grid">
 
-                <article class="portfolio-card">
-                    <a href="nails/index.html" class="portfolio-card-link">
-                        <div>  
+                <!-- Natalia Nails -->
+                <article class="pf-card" data-sector="beauty">
+                    <a href="nails/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">natalia-nails-studio · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-nails">
+                                <div class="pf-screen-bg" style="background-image:url('nails/images/hero.jpg')"></div>
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">Natalia Nails</span>
+                                    <span class="pf-mini-links"><span>Services</span><span>Gallery</span><span>Book</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">Boutique nails,<br><em>perfected.</em></div>
+                                    <span class="pf-mini-cta">Book appointment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Beauty &amp; Salon</span>
+                                <span class="pf-build-time"><i data-lucide="clock"></i> Fast build</span>
+                            </div>
                             <h3>Natalia Nails Studio</h3>
-                            <p>Boutique nail atelier site built with polished visual style and clear booking flow.</p>
-                        </div>
-                        <div class="project-screenshot">
-                            <img src="nails/images/hero.jpg" alt="Natalia Nails Studio front page screenshot" />
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="portfolio-card">
-                    <a href="cleanic/index.html" class="portfolio-card-link">
-                        <div>
-                            <h3>The Cleanic</h3>
-                            <p>Responsive cleaning services landing page with a polished booking experience and modern visual system.</p>
-                        </div>
-                        <div class="project-screenshot">
-                            <img src="cleanic/images/woman2.webp" alt="The Cleanic cleaning website screenshot" />
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
+                            <p>Boutique nail atelier with a polished visual identity and a friction-free booking flow. Enquiries increased within weeks of launch — clients regularly compliment the site's professional look.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Booking flow</span>
+                                <span class="pf-feature">Service menu</span>
+                                <span class="pf-feature">Gallery</span>
+                                <span class="pf-feature">Mobile-first</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
                         </div>
                     </a>
                 </article>
 
-                <article class="portfolio-card">
-                    <a href="cars/index.html" class="portfolio-card-link">
-                        <div>
+                <!-- Signature Detailing -->
+                <article class="pf-card" data-sector="auto">
+                    <a href="cars/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">the-signature-detailing · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-cars">
+                                <div class="pf-screen-bg" style="background-image:url('cars/Images/Gallery7.jfif')"></div>
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">Signature Detailing</span>
+                                    <span class="pf-mini-links"><span>Services</span><span>Our Work</span><span>Contact</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">Showroom finish,<br>at your door.</div>
+                                    <span class="pf-mini-cta">Book a detail</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Automotive</span>
+                                <span class="pf-build-time"><i data-lucide="clock"></i> 3 weeks</span>
+                            </div>
                             <h3>The Signature Detailing</h3>
-                            <p>Mobile car detailing website with a polished booking flow, strong hero visuals, and easy service access.</p>
-                        </div>
-                        <div class="project-screenshot">
-                            <img src="cars/Images/Gallery7.jfif" alt="BMW covered in soap preview" />
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
+                            <p>Replaced an outdated template site with a multi-page build: video hero, before-and-after galleries, and dedicated service pages — all shipped in three weeks.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Video hero</span>
+                                <span class="pf-feature">Before / after gallery</span>
+                                <span class="pf-feature">Multi-page</span>
+                                <span class="pf-feature">Booking flow</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
                         </div>
                     </a>
                 </article>
 
-                <article class="portfolio-card">
-                    <a href="coffee/index.html" class="portfolio-card-link">
-                        <div>
+                <!-- Aquatica -->
+                <article class="pf-card" data-sector="fitness">
+                    <a href="aquatica/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">aquatica-swim-school · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-aquatica">
+                                <div class="pf-screen-bg" style="background-image:url('aquatica/images/hero-swim.jpg')"></div>
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">AQUATICA</span>
+                                    <span class="pf-mini-links"><span>Programmes</span><span>Coaches</span><span>Contact</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">Swim with<br>confidence.</div>
+                                    <span class="pf-mini-cta">Book a lesson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Health &amp; Fitness</span>
+                                <span class="pf-build-time"><i data-lucide="zap"></i> Sub-second load</span>
+                            </div>
+                            <h3>Aquatica Swim School</h3>
+                            <p>Full brand-identity site for an adult swim school — programme listings, gallery, and a calm, trust-first enquiry flow. The whole site loads in under a second.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Brand identity</span>
+                                <span class="pf-feature">Programme listings</span>
+                                <span class="pf-feature">Enquiry flow</span>
+                                <span class="pf-feature">Gallery</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Cleanic -->
+                <article class="pf-card" data-sector="home">
+                    <a href="cleanic/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">the-cleanic · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-cleanic">
+                                <div class="pf-screen-bg" style="background-image:url('cleanic/images/woman2.webp')"></div>
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">The Cleanic</span>
+                                    <span class="pf-mini-links"><span>Services</span><span>Pricing</span><span>Book</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">A spotless home,<br>on schedule.</div>
+                                    <span class="pf-mini-cta">Get a quote</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Home Services</span>
+                                <span class="pf-build-time"><i data-lucide="smartphone"></i> Mobile-first</span>
+                            </div>
+                            <h3>The Cleanic</h3>
+                            <p>Cleaning services landing page with a modern visual system, before-and-after proof, and a booking experience designed to turn visitors into scheduled jobs.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Booking experience</span>
+                                <span class="pf-feature">Before / after</span>
+                                <span class="pf-feature">Trust signals</span>
+                                <span class="pf-feature">Responsive</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Ember & Grain -->
+                <article class="pf-card" data-sector="hospitality">
+                    <a href="coffee/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">ember-and-grain · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-coffee">
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">Ember <em>&amp;</em> Grain</span>
+                                    <span class="pf-mini-links"><span>Menu</span><span>About</span><span>Visit</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">Slow coffee<br>in a railway <em>arch.</em></div>
+                                    <span class="pf-mini-cta">See the menu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Hospitality</span>
+                                <span class="pf-build-time"><i data-lucide="pen-tool"></i> Story-driven</span>
+                            </div>
                             <h3>Ember &amp; Grain</h3>
-                            <p>Artisan coffee shop site with a warm, craft aesthetic, seasonal menu, and a story-driven brand feel.</p>
-                        </div>
-                        <div class="project-screenshot" style="background: linear-gradient(135deg, #1C0F0A 0%, #3D1F12 50%, #C8783A 100%); display:flex; align-items:center; justify-content:center; font-size:5rem;">
-                            ☕
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
+                            <p>Artisan coffee shop site with a warm, craft aesthetic — seasonal menu, opening hours, and a story-driven brand feel that matches the room it represents.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Menu system</span>
+                                <span class="pf-feature">Brand storytelling</span>
+                                <span class="pf-feature">Location &amp; hours</span>
+                                <span class="pf-feature">Editorial type</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
                         </div>
                     </a>
                 </article>
 
-                <article class="portfolio-card">
-                    <a href="fitness/index.html" class="portfolio-card-link">
-                        <div>
+                <!-- Peak Form -->
+                <article class="pf-card" data-sector="fitness">
+                    <a href="fitness/index.html" class="pf-card-link">
+                        <div class="pf-browser">
+                            <div class="pf-browser-bar">
+                                <span class="pf-bdot r"></span><span class="pf-bdot y"></span><span class="pf-bdot g"></span>
+                                <span class="pf-url">peak-form · live build</span>
+                            </div>
+                            <div class="pf-screen pf-screen-fitness">
+                                <div class="pf-screen-tint"></div>
+                                <div class="pf-mini-nav">
+                                    <span class="pf-mini-wordmark">PEAK<span class="lime">FORM</span></span>
+                                    <span class="pf-mini-links"><span>Programs</span><span>Coaches</span><span>Pricing</span></span>
+                                </div>
+                                <div class="pf-mini-hero">
+                                    <div class="pf-mini-headline">Every program is<br>written <em>from scratch.</em></div>
+                                    <span class="pf-mini-cta">Book free session</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf-card-body">
+                            <div class="pf-card-meta">
+                                <span class="pf-tag">Health &amp; Fitness</span>
+                                <span class="pf-build-time"><i data-lucide="trending-up"></i> Conversion-led</span>
+                            </div>
                             <h3>Peak Form</h3>
-                            <p>High-energy personal training studio site with bold typography, program breakdowns, and clear pricing.</p>
-                        </div>
-                        <div class="project-screenshot" style="background: linear-gradient(135deg, #0D0D0D 0%, #141414 60%, #1C2400 100%); display:flex; align-items:center; justify-content:center; font-family:'Barlow Condensed',sans-serif; font-size:2.5rem; font-weight:900; letter-spacing:.05em; color:#C4FF00;">
-                            PEAK<br/>FORM
-                        </div>
-                        <div class="portfolio-card-footer">
-                            <span class="btn btn-secondary btn-sm">Open full site</span>
-                            <span class="muted small">Front page preview</span>
+                            <p>High-energy personal training studio site — bold condensed typography, program breakdowns, coach profiles, and pricing built around one job: booking the free first session.</p>
+                            <div class="pf-features">
+                                <span class="pf-feature">Program breakdowns</span>
+                                <span class="pf-feature">Clear pricing</span>
+                                <span class="pf-feature">Bold typography</span>
+                                <span class="pf-feature">Strong CTAs</span>
+                            </div>
+                            <div class="pf-card-footer">
+                                <span class="pf-open">Open live site <i data-lucide="arrow-right"></i></span>
+                                <span class="pf-live"><span class="dot"><span class="dot-pulse"></span><span class="dot-core"></span></span>Live</span>
+                            </div>
                         </div>
                     </a>
                 </article>
+            </div>
+
+            <!-- Every build includes -->
+            <div class="pf-includes reveal">
+                <h2>Every build above includes</h2>
+                <div class="pf-includes-grid">
+                    <span class="pf-include"><i data-lucide="pen-tool"></i> Custom design — zero templates</span>
+                    <span class="pf-include"><i data-lucide="file-code"></i> Full source code ownership</span>
+                    <span class="pf-include"><i data-lucide="gauge"></i> 95+ Lighthouse performance</span>
+                    <span class="pf-include"><i data-lucide="smartphone"></i> Mobile-first responsive build</span>
+                    <span class="pf-include"><i data-lucide="search"></i> On-page SEO foundations</span>
+                    <span class="pf-include"><i data-lucide="badge-check"></i> Fixed price, fixed timeline</span>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="pf-cta reveal">
+                <div class="pf-cta-glow"></div>
+                <h2 class="display h2">Your business could be <span class="accent">next.</span></h2>
+                <p>Tell us what you do and we'll come back with a clear plan and a fixed quote — usually within one business day. No hard sell.</p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-primary btn-lg">Start your project <i data-lucide="arrow-right"></i></a>
+                    <a href="https://wa.me/447345323824" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg"><i data-lucide="message-circle"></i> WhatsApp</a>
+                    <a href="mailto:echowebworkscompany@gmail.com" class="btn btn-outline btn-lg"><i data-lucide="mail"></i> Email us</a>
+                </div>
             </div>
         </div>
     </main>
@@ -155,6 +359,7 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#pricing">Pricing</a></li>
                         <li><a href="../index.html#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -175,10 +380,28 @@
             </div>
             <div class="footer-bottom">
                 <span>© <span id="year"></span> Echo Web Works. All rights reserved.</span>
-                <span>Designed for speed · Live previews · Easy extensions</span>
+                <span>Designed for speed · Live previews · Custom-coded</span>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Sector filtering
+        document.addEventListener('DOMContentLoaded', () => {
+            const filters = document.querySelectorAll('.pf-filter');
+            const cards = document.querySelectorAll('.pf-card');
+            filters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const f = btn.dataset.filter;
+                    cards.forEach(card => {
+                        card.classList.toggle('pf-hidden', f !== 'all' && card.dataset.sector !== f);
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
